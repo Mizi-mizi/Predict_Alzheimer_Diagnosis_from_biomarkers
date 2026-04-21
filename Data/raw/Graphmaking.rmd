@@ -1,0 +1,95 @@
+```{r}
+library(tidyverse)
+```
+
+```{r}
+cdr = read.csv("cdr_reg.csv")
+
+cdr_bar <- ggplot(cdr_cat, aes(x = CDRSB_group)) +
+  geom_bar(fill = "#6FA8DC", color = "white", width = 0.8) +
+  labs(
+    title = "CDRSB Severity Distribution",
+    x = NULL,
+    y = "Number of Participants"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    axis.text.x = element_text(angle = 25, hjust = 1),
+    panel.grid.major.x = element_blank()
+  )
+
+cdr_bar
+
+ggsave("cdr_barplot.jpeg", plot = cdr_bar, width = 8, height = 5, dpi = 300)
+
+```
+
+```{r}
+faq = read.csv("faq_reg.csv")
+faq_dist <- ggplot(faq, aes(x = FAQTOTAL )) +
+  geom_histogram(binwidth = 1, fill = "skyblue", color = "white") +
+  coord_cartesian(xlim = c(0, 15))+
+  labs(
+    title = "Distribution of FAQ",
+    x = "FAQTotal",
+    y = "Count"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    axis.text.x = element_text(angle = 25, hjust = 1),
+    panel.grid.major.x = element_blank()
+  )
+
+faq_dist
+
+ggsave("faq_barplot.jpeg", plot = faq_dist, width = 8, height = 5, dpi = 300)
+
+```
+
+```{r}
+mmse = read.csv("mmse_reg.csv")
+mmse_dist <- ggplot(mmse, aes(x = MMSCORE )) +
+  geom_histogram(binwidth = 1, fill = "skyblue", color = "white") +
+  coord_cartesian(xlim = c(13, 30))+
+  labs(
+    title = "Distribution of MMSE",
+    x = "MMSCORE",
+    y = "Count"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    axis.text.x = element_text(angle = 25, hjust = 1),
+    panel.grid.major.x = element_blank()
+  )
+
+
+ggsave("mmse_barplot.jpeg", plot = mmse_dist, width = 8, height = 5, dpi = 300)
+mmse_dist
+
+```
+```{r}
+moca = read.csv("moca_reg.csv")
+moca_dist <- ggplot(moca, aes(x = MOCA)) +
+  geom_histogram(binwidth = 1, fill = "skyblue", color = "white") +
+  #coord_cartesian(xlim = c(13, 30))+
+  labs(
+    title = "Distribution of MOCA",
+    x = "MOCA",
+    y = "Count"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    axis.text.x = element_text(angle = 25, hjust = 1),
+    panel.grid.major.x = element_blank()
+  )
+
+
+ggsave("moca_barplot.png", plot = moca_dist, width = 8, height = 5, dpi = 300)
+moca_dist
+```
+
+
