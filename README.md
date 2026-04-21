@@ -71,7 +71,13 @@ Python 3 with `numpy`, `pandas`, `scikit-learn`, `joblib`.
 
 ## Acknowledgements
 
-**Collaborators:** TBD
+**Collaborators:** 
+
+- Meixi Du 
+- Jacob Kang
+- Ishaanee Roy
+- Berne Chu
+- Lu Liu
 
 **Data source:** Data used in preparation of this project were obtained
 from the Alzheimer's Disease Neuroimaging Initiative (ADNI) database
