@@ -1,0 +1,10 @@
+cohort_definition,n_participants,notes
+"All MCI participants (dated, plasma not required)",1801,Broader denominator / context
+Clinical MCI cohort (A) = MCI + plasma anchor,535,Study anchor cohort
+Outcome-ascertained MCI cohort (B),139,Stable + Progressed
+  Stable MCI at 24m,105,
+  Progressed to dementia within 24m,34,
+  Unascertained outcome,396,Insufficient / out-of-window follow-up
+Core-biomarker complete cohort (C),135,Outcome-ascertained + full core panel
+Expanded-biomarker complete cohort (D),135,C + Aβ40 + Aβ42/Aβ40 ratio
+Clinical-adjusted cohort (E),135,= C; sex/education/comorbidities NOT in data

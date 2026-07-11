@@ -1,0 +1,5 @@
+raw_value,harmonized,n_rows,is_event,is_censoring_eligible,notes
+1,CN,6404,No,Yes,Cognitively normal. Valid non-dementia -> can serve as censoring visit.
+2,MCI,6623,No,Yes,MCI. Anchor-defining; valid non-dementia -> censoring visit.
+3,Dementia,3016,Yes,No,Dementia/AD (DXAD==1). First post-anchor occurrence = survival event.
+(blank),unknown/other,45,No,No,Ambiguous. Never used to define event or censor.

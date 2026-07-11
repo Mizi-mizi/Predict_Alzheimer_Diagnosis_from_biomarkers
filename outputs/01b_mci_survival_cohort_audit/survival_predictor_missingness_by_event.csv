@@ -1,0 +1,14 @@
+variable,event_pct_missing,censored_pct_missing
+ptau217,0.0,0.0
+APOE4_COUNT,1.2,2.5
+entry_age,0.0,0.0
+age_at_anchor_approx,0.0,0.0
+gfap,0.0,13.3
+nfl,0.0,13.3
+abeta42,2.3,0.0
+abeta40,2.3,0.0
+ratio_ab42_ab40,2.3,0.0
+CDRSB,40.7,16.7
+FAQTOTAL,4.7,8.3
+MMSCORE,4.7,13.9
+MOCA,51.2,13.6

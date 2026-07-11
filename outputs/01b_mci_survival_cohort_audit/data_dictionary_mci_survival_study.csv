@@ -1,0 +1,19 @@
+analysis_variable,source,raw_column,timepoint_rule,definition,unit,role,notes
+anchor_date,UPENN_PLASMA,EXAMDATE,earliest usable-assay MCI plasma draw,survival time origin,date,plasma anchor QC field,±90d dx alignment
+anchor_dx_date,DXSUM,EXAMDATE,nearest MCI dx within ±90d,aligned MCI diagnosis date,date,plasma anchor QC field,see align_offset_days
+align_offset_days,derived,anchor-dx dates,anchor,blood-to-diagnosis time gap,days,plasma anchor QC field,same_day_alignment flag records 0d
+ptau217,UPENN_PLASMA,pT217_F,anchor,Fujirebio plasma p-tau217,pg/mL,primary predictor,log-transform likely; never missing in file
+APOE4_COUNT,APOERES,GENOTYPE,time-invariant,count of '4' alleles,0-2,genetic covariate,
+entry_age,My_Table,entry_age,study entry (undated),age at study entry,years,demographic covariate,LABELLED primary age; no datestamp in source
+age_at_anchor_approx,derived,entry_age + gap,anchor,entry_age + (anchor - earliest dated dx)/365.25,years,demographic covariate,APPROX; age_is_entry_age_fallback flag set
+gfap,UPENN_PLASMA,GFAP_Q,anchor,Quanterix plasma GFAP,pg/mL,secondary predictor,
+nfl,UPENN_PLASMA,NfL_Q,anchor,Quanterix plasma NfL,pg/mL,secondary predictor,
+abeta42,UPENN_PLASMA,AB42_F,anchor,Fujirebio Aβ42,pg/mL,secondary predictor,
+abeta40,UPENN_PLASMA,AB40_F,anchor,Fujirebio Aβ40,pg/mL,secondary predictor,
+ratio_ab42_ab40,derived,AB42_F/AB40_F,anchor,recomputed Aβ42/Aβ40 ratio,ratio,secondary predictor,vendor AB42_AB40_F kept separately
+CDRSB/FAQTOTAL/MMSCORE/MOCA,CDR/FAQ/MMSE/MOCA,CDRSB/FAQTOTAL/MMSCORE/MOCA,anchor ±90d,cognitive/functional scores,scale,clinical benchmark,future benchmark only
+event_indicator,DXSUM(follow-up),DIAGNOSIS,post-anchor,"1=dementia observed, 0=censored",0/1,survival event variable,first post-anchor Dementia
+time_to_event_or_censor_days,derived,dates,post-anchor,anchor->event or anchor->last non-dementia,days,survival event variable,
+censor_date,DXSUM(follow-up),EXAMDATE,last non-dementia post-anchor,censoring date,date,censoring variable,no death table -> admin censor at last clinical dx
+survival_followup_eligible_flag,derived,-,-,has >=1 usable post-anchor dx or event,bool,exclusion/QC flag,no_usable_followup_flag is its complement
+age_derivation_suspect / sameday_dementia_at_anchor / reverted_cn,derived,-,-,QC edge-case flags,bool/int,exclusion/QC flag,

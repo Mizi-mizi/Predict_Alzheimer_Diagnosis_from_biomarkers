@@ -1,0 +1,10 @@
+group,n,percent
+Survival-follow-up cohort,410,100.0
+Observed dementia event (any time),86,21.0
+Right-censored,324,79.0
+Dementia event by 12 months,15,3.7
+Dementia event by 24 months,34,8.3
+Dementia event by 36 months,56,13.7
+Follow-up >=24m without prior event,161,39.3
+Follow-up <24m and censored,215,52.4
+No usable post-anchor follow-up (excluded),125,

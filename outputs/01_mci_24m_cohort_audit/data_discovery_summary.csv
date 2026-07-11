@@ -1,0 +1,12 @@
+file,purpose,id_field,visit_field,date_field,relevant_cols,notes
+All_Subjects_UPENN_PLASMA_FUJIREBIO_QUANTERIX_05Mar2026.csv,PRIMARY plasma biomarker panel (Fujirebio p-tau217/Aβ42/Aβ40/ratio; Quanterix NfL/GFAP),PTID / RID,VISCODE2,EXAMDATE,"pT217_F, AB42_F, AB40_F, AB42_AB40_F, NfL_Q, GFAP_Q, NfL_F, GFAP_F",One row per subject-visit. -4/-5 = missing. NfL/GFAP use _Q (Quanterix); _F mostly missing.
+All_Subjects_DXSUM_05Mar2026.csv,Diagnosis / clinical status at each visit (baseline AND follow-up),PTID / RID,VISCODE2,EXAMDATE,"DIAGNOSIS (1=CN,2=MCI,3=Dementia), DXNORM/DXMCI/DXAD detail flags","16,088 visit rows. 115 rows lack EXAMDATE. Used for both anchor dx and follow-up outcome."
+All_Subjects_APOERES_05Mar2026.csv,APOE genotype -> ε4 allele count,PTID / RID,VISCODE (bl/sc),APTESTDT,"GENOTYPE (e.g. 3/3, 3/4, 4/4)",Time-invariant genetic covariate; APOE4_COUNT = count of '4' in GENOTYPE.
+All_Subjects_My_Table_05Mar2026.csv,Demographic age at study entry,subject_id (== PTID),(none),(none),entry_age,"ONLY demographic available. entry_age = age at study entry, not age at each visit."
+All_Subjects_CDR_05Mar2026.csv,Clinical benchmark: CDR Sum of Boxes,PTID / RID,VISCODE2,VISDATE,"CDRSB, CDGLOBAL, CDVERSION","Benchmark predictor for future study, not a primary biomarker."
+All_Subjects_MMSE_05Mar2026.csv,Clinical benchmark: MMSE total,PTID / RID,VISCODE2,VISDATE,MMSCORE,Benchmark predictor.
+All_Subjects_MOCA_05Mar2026.csv,Clinical benchmark: MoCA total,PTID / RID,VISCODE2,VISDATE,MOCA,"Benchmark predictor. Fewer rows (9,072) — not collected in ADNI1."
+All_Subjects_FAQ_05Mar2026.csv,Clinical benchmark: Functional Activities Questionnaire,PTID / RID,VISCODE2,VISDATE,FAQTOTAL,Benchmark predictor.
+All_Subjects_FNIHBC_BLOOD_BIOMARKER_TRAJECTORIES_05Mar2026.csv,ALTERNATIVE long-format plasma biomarkers (different assays),PTID / RID,VISCODE2,EXAMDATE,"TESTNAME, TESTVALUE, UNITS (janssen p-tau217, NfL, Aβ42, GFAP ...)",Not used as primary source (no clean Aβ40/ratio; mixed assays). Documented as fallback.
+All_Subjects_BIOMARK_05Mar2026.csv,Blood/CSF specimen collection metadata (not analyte values),PTID / RID,VISCODE2,EXAMDATE,(collection logistics only),Not an analyte source; excluded.
+All_Subjects_GENETIC_05Mar2026.csv,Genetic-sample collection logistics,PTID / RID,VISCODE2,VISDATE,(logistics only),No usable analyte/covariate; excluded.

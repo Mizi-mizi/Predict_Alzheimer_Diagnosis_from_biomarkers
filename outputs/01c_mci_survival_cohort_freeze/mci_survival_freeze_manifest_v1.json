@@ -1,0 +1,382 @@
+{
+  "manifest_schema_version": "1.0.0",
+  "build": 4,
+  "version": "v1",
+  "created_utc": "2026-07-11T21:24:04+00:00",
+  "created_utc_note": "THE ONLY non-deterministic field. Excluded from byte-identity comparisons.",
+  "project_root": "/Users/zoeyd/Desktop/Predict_AD_from_Biomarkers",
+  "git": {
+    "commit": "b14bcdd00f976c2df8259a1eddbed5f87dbcc3d7",
+    "branch": "main",
+    "dirty": true
+  },
+  "environment": {
+    "python": "3.14.0",
+    "platform": "macOS-14.7.6-arm64-arm-64bit-Mach-O",
+    "pandas": "3.0.1",
+    "numpy": "2.4.3",
+    "note": "notebooks 01c-01f require only python + pandas + numpy; nbformat/nbconvert/ipykernel are needed to execute them"
+  },
+  "self_referential_hashing": {
+    "manifest_own_hash": null,
+    "policy": "A file cannot contain its own hash. This manifest EXCLUDES its own SHA-256; verify it externally with `shasum -a 256 mci_survival_freeze_manifest_v1.json` against the value printed in reports/mci_survival_person1_handoff_v1.md.",
+    "notebook_hash_policy": "Notebook FILE hashes change every time nbconvert --inplace rewrites stored outputs. We therefore record `source_sha256` = SHA-256 of the concatenated CODE CELLS, which is execution-independent and is the hash to verify. 01f additionally cannot record its own file hash because it writes this manifest during its own execution."
+  },
+  "parameters": {
+    "anchor_window_days": 90,
+    "random_seed": 20260711,
+    "days_per_month": 30.4375,
+    "diagnosis_coding": {
+      "1": "CN",
+      "2": "MCI",
+      "3": "Dementia",
+      "blank": "unknown/other \u2014 never an event, never a censor"
+    },
+    "sentinel_rules": {
+      "plasma": "-4/-5 -> NaN; non-positive -> NaN",
+      "cognition": "NONE APPLIED \u2014 see unresolved decision #3",
+      "known_gap": "a '-1' not-done code exists in raw MMSE/FAQ and is NOT covered by the -4/-5 rule (none reached v1)"
+    },
+    "imputation": "none",
+    "transformation": "none"
+  },
+  "modeling_contract": {
+    "authoritative_modeling_file": "outputs/01c_mci_survival_cohort_freeze/mci_survival_primary_cohort_v1.tsv",
+    "duration_column": "time_to_event_or_censor_days",
+    "event_column": "event_indicator",
+    "event_coding": {
+      "1": "dementia observed",
+      "0": "right-censored"
+    },
+    "model0_predictors": [
+      "entry_age",
+      "APOE4_COUNT"
+    ],
+    "model1_predictors": [
+      "entry_age",
+      "APOE4_COUNT",
+      "ptau217"
+    ],
+    "n_participants": 401,
+    "n_events": 85,
+    "n_censored": 316,
+    "model0_and_model1_share_identical_participants": true
+  },
+  "cohorts": {
+    "anchor": {
+      "n": 535,
+      "events": null
+    },
+    "survival_followup": {
+      "n": 410,
+      "events": 86
+    },
+    "primary_complete_case": {
+      "n": 401,
+      "events": 85
+    }
+  },
+  "source_data": [
+    {
+      "path": "Data/raw/All_Subjects_DXSUM_05Mar2026.csv",
+      "sha256": "35e1b1f45a7a5cbfd51b39d68a4afd3f2d6276e86be8561c9e8a562286208b68",
+      "bytes": 3461706,
+      "mtime_utc": "2000-01-01T08:00:00+00:00"
+    },
+    {
+      "path": "Data/raw/All_Subjects_UPENN_PLASMA_FUJIREBIO_QUANTERIX_05Mar2026.csv",
+      "sha256": "185c583d8e8777f83e4d1fe6b40f6ee923000a281c22f39dc524f92863bb2a96",
+      "bytes": 396959,
+      "mtime_utc": "2000-01-01T08:00:00+00:00"
+    },
+    {
+      "path": "Data/raw/All_Subjects_APOERES_05Mar2026.csv",
+      "sha256": "ab617cf2c3cd776a685b6fbd3161f9caea196d8d1e9bb5dc5329146db257909a",
+      "bytes": 329977,
+      "mtime_utc": "2000-01-01T08:00:00+00:00"
+    },
+    {
+      "path": "Data/raw/All_Subjects_My_Table_05Mar2026.csv",
+      "sha256": "f04ad5e2c21a4d0d93dd9e31b81b2024df1cb41c942b5104fc0b245e39fb1ae6",
+      "bytes": 106043,
+      "mtime_utc": "2000-01-01T08:00:00+00:00"
+    },
+    {
+      "path": "Data/raw/All_Subjects_CDR_05Mar2026.csv",
+      "sha256": "5e29c321b9fed128ea17b3fe19822e634148c37d91711785006c0ef181b691e0",
+      "bytes": 2615587,
+      "mtime_utc": "2000-01-01T08:00:00+00:00"
+    },
+    {
+      "path": "Data/raw/All_Subjects_MMSE_05Mar2026.csv",
+      "sha256": "291969e071110205b70109235f70a5296a62a9f506c097b612aef24019cb72d8",
+      "bytes": 4142395,
+      "mtime_utc": "2000-01-01T08:00:00+00:00"
+    },
+    {
+      "path": "Data/raw/All_Subjects_MOCA_05Mar2026.csv",
+      "sha256": "c2bca70e52717f5a571f4cb36274dcb1010eac4f1b648dffcdfee15185a673af",
+      "bytes": 2663233,
+      "mtime_utc": "2000-01-01T08:00:00+00:00"
+    },
+    {
+      "path": "Data/raw/All_Subjects_FAQ_05Mar2026.csv",
+      "sha256": "3d3504af35b7c2d19d715c6e040bc335d1f8f0d9a0823d768fc432286414cb7b",
+      "bytes": 2237121,
+      "mtime_utc": "2000-01-01T08:00:00+00:00"
+    }
+  ],
+  "notebooks": [
+    {
+      "path": "notebooks/01c_mci_survival_cohort_freeze.ipynb",
+      "source_sha256": "f7327a9b46f17acbfaf6744e88d205a1c62539d66b4da25b0f2243568cd783f1",
+      "file_sha256": "de70d114cbf1eea20034d842a2a885ac9b1de20d7f4082c31a8a1aec826a82f8",
+      "note": ""
+    },
+    {
+      "path": "notebooks/01d_mci_survival_manual_qc_packet.ipynb",
+      "source_sha256": "e376bc6acfa3184c6b080b96ffb1aca525f27d18e71d7653dd8f16dfed3b891c",
+      "file_sha256": "143431a992fa5f1e34644d7b5bcedd9378a28a5541fcdc7a1985ce5e0f96218c",
+      "note": ""
+    },
+    {
+      "path": "notebooks/01e_mci_survival_feature_availability_audit.ipynb",
+      "source_sha256": "378c1f991c4f0653ab29c93138b507ee7ec44273cfb28d3eb9972f7c8475c6ba",
+      "file_sha256": "46b69cb8181d47e9d2497a6ed0f7792e16ae43cde0d2552b63db310019a7e169",
+      "note": ""
+    },
+    {
+      "path": "notebooks/01f_mci_survival_handoff_package.ipynb",
+      "source_sha256": "b5b54172a1ad5645b25e46e78d075a16280c6c602317d71ad9612de4627a75e9",
+      "file_sha256": null,
+      "note": "SELF: writes this manifest; its own file hash cannot be recorded inside itself \u2014 verify source_sha256"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_anchor_cohort_v1.tsv",
+      "build": 1,
+      "sha256": "64e66814726c2263281b25da01c8118f73f77e5e00354bdca2074400cb0aa6ee",
+      "n_rows": 535,
+      "n_cols": 78
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_followup_cohort_v1.tsv",
+      "build": 1,
+      "sha256": "8203a70f7cc8d03053070fa12bb90cf73bb6c20b09416aa61c2a7ba4b7c8086b",
+      "n_rows": 410,
+      "n_cols": 78
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_primary_cohort_v1.tsv",
+      "build": 1,
+      "sha256": "a15e2cb8606f676b3bcfc4d23de72c752779836ce9406b04b01c84394a76e8ad",
+      "n_rows": 401,
+      "n_cols": 78
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_exclusion_log_v1.tsv",
+      "build": 1,
+      "sha256": "a3eafebcdd3e392ba75a7e97da842966d6f8793ac1e43ce1817378c4857fe2ff",
+      "n_rows": 535,
+      "n_cols": 25
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_cohort_flow_v1.tsv",
+      "build": 1,
+      "sha256": "39b88d1a9f6cc3e48dbb605f94a0f11a6be8bf3aa6e90a92b340a513b6b3c8f1",
+      "n_rows": 13,
+      "n_cols": 5
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_freeze_provenance_v1.json",
+      "build": 1,
+      "sha256": "d32c113a0406242bac7b7c08d2cd7b23a9b3d3ece4b2b3a47bee9cbdb0acf05e",
+      "n_rows": null,
+      "n_cols": null
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_manual_qc_cases_v1.tsv",
+      "build": 2,
+      "sha256": "90669ba268a39daee4ee3c8c68795d43673e8948c25015626ed1f1f831dc84dd",
+      "n_rows": 46,
+      "n_cols": 56
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_manual_qc_longitudinal_context_v1.tsv",
+      "build": 2,
+      "sha256": "de1954adf09463c89091a6a01217620508697f27a49e8456a3ce7b4c403d92e6",
+      "n_rows": 362,
+      "n_cols": 40
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_manual_qc_form_v1.tsv",
+      "build": 2,
+      "sha256": "9ad2db21c2067e2a0482a4a16831bedc943ba120943c75db8322fe5004832dea",
+      "n_rows": 46,
+      "n_cols": 30
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_manual_qc_sampling_summary_v1.tsv",
+      "build": 2,
+      "sha256": "632e5bd24ae99f6cb0d23ecc6879bb65160b8facee64335f640187344be41914",
+      "n_rows": 10,
+      "n_cols": 11
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_feature_missingness_v1.tsv",
+      "build": 3,
+      "sha256": "cabe0fffaff0634b5cb651e901ae431180fd352d0403cf7e21bee170658ad4aa",
+      "n_rows": 16,
+      "n_cols": 35
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_model_complete_case_counts_v1.tsv",
+      "build": 3,
+      "sha256": "2d380fe33673dae3bb028cfac4c1cb33468e6d95b7eab5fedae5e70fe3b47182",
+      "n_rows": 42,
+      "n_cols": 18
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_feature_timing_v1.tsv",
+      "build": 3,
+      "sha256": "b6611ed8a1426a1ea55525f0b26243b6adc56b3fd81f9090044189682bbd0a22",
+      "n_rows": 40,
+      "n_cols": 33
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_feature_scenario_counts_v1.tsv",
+      "build": 3,
+      "sha256": "e60b4a937a4f4e4fc0ff4faf045efe18647648e4fed55d751a18736732ead0f7",
+      "n_rows": 12,
+      "n_cols": 19
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_ptau181_platform_availability_v1.tsv",
+      "build": 3,
+      "sha256": "ca30aa47975d6c8d6e9c78593812dd14540bacc3ee9b3c47f8938957452c4d50",
+      "n_rows": 4,
+      "n_cols": 14
+    },
+    {
+      "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_data_dictionary_v1.tsv",
+      "build": 4,
+      "sha256": "08465c1e129c67707155cee83373f302a40c5de5271d801a4a12af3f420f6b0a",
+      "n_rows": 78,
+      "n_cols": 18
+    }
+  ],
+  "reports": [
+    "reports/mci_survival_build0_inventory_v1.md",
+    "reports/mci_survival_build1_freeze_report_v1.md",
+    "reports/mci_survival_build2_qc_guide_v1.md",
+    "reports/mci_survival_build3_feature_audit_v1.md",
+    "reports/mci_survival_primary_analysis_spec_v1.md",
+    "reports/mci_survival_person1_handoff_v1.md"
+  ],
+  "qc_status": {
+    "pre_anchor_dementia_flagged": 8,
+    "pre_anchor_dementia_in_survival": 5,
+    "pre_anchor_dementia_in_primary": 4,
+    "pre_anchor_dementia_primary_events": 1,
+    "affected_primary_event_rids": [
+      467
+    ],
+    "human_adjudication": "PENDING \u2014 mci_survival_manual_qc_form_v1.tsv is blank",
+    "censor_is_anchor_matching_visit": 74,
+    "followup_le_30_days": 62
+  },
+  "unresolved_decisions": [
+    {
+      "id": 1,
+      "decision": "Prior dementia before the anchor",
+      "question": "Should the 8 participants with a dementia diagnosis BEFORE their MCI anchor be excluded from the primary analysis?",
+      "evidence": "8 in cohort A, 5 in B (2 events), 4 in C (1 event -> RID [467]). Exclusion scenario: C = 397 / 84 events.",
+      "status": "UNRESOLVED",
+      "owner": "clinical team",
+      "blocking_primary_analysis": true,
+      "artifact": "mci_survival_manual_qc_form_v1.tsv (blank; awaiting human review)"
+    },
+    {
+      "id": 2,
+      "decision": "Cognition measured AFTER the anchor",
+      "question": "Is a 'baseline' cognitive score measured up to +88 days after the blood draw acceptable, or must cognition be restricted to on-or-before the anchor?",
+      "evidence": "post-anchor counts: CDRSB 15, MMSCORE 17, MOCA 24, FAQTOTAL 51. Restricting to on-or-before removes ALL leakage and costs 0 events for CDRSB and MMSCORE.",
+      "status": "UNRESOLVED",
+      "owner": "modeling + clinical",
+      "blocking_primary_analysis": false,
+      "artifact": "mci_survival_feature_timing_v1.tsv"
+    },
+    {
+      "id": 3,
+      "decision": "Cognitive '-1' not-done sentinel handling",
+      "question": "Should the sentinel rule be extended from {-4,-5} to include -1 for cognitive fields?",
+      "evidence": "raw MMSE has 14 and raw FAQ has 32 '-1' codes; the pipeline never applies sentinel cleaning to cognition. NO -1 reached frozen v1, so v1 is unaffected \u2014 but the risk is live for any future cognitive variable.",
+      "status": "UNRESOLVED",
+      "owner": "data team",
+      "blocking_primary_analysis": false,
+      "artifact": "mci_survival_feature_missingness_v1.tsv"
+    },
+    {
+      "id": 4,
+      "decision": "Exact cognition variable selection",
+      "question": "Which cognitive variable (if any) should enter a secondary model?",
+      "evidence": "event retention: MMSCORE 81, FAQTOTAL 81, CDRSB 50, MOCA 41 (of 85). No validated memory/executive composite exists; CDMEMORY/CDJUDGE are CDR box scores and CDJUDGE is only an executive PROXY.",
+      "status": "UNRESOLVED",
+      "owner": "clinical team",
+      "blocking_primary_analysis": false,
+      "artifact": "mci_survival_model_complete_case_counts_v1.tsv"
+    },
+    {
+      "id": 5,
+      "decision": "Biomarker transformation / scaling",
+      "question": "Should p-tau217 be log-transformed and/or standardised?",
+      "evidence": "raw pg/mL values are right-skewed. NO transformation has been applied anywhere in Person 1's outputs \u2014 deliberately left to the modeling stage.",
+      "status": "UNRESOLVED",
+      "owner": "modeling",
+      "blocking_primary_analysis": true,
+      "artifact": "mci_survival_primary_cohort_v1.tsv (raw values)"
+    },
+    {
+      "id": 6,
+      "decision": "Prediction horizon",
+      "question": "At what horizon (e.g. 24 months) should risk be reported and calibrated?",
+      "evidence": "events by 12/24/36 months = 15/33/55 of 85 in the primary cohort.",
+      "status": "UNRESOLVED",
+      "owner": "modeling + clinical",
+      "blocking_primary_analysis": true,
+      "artifact": "mci_survival_model_complete_case_counts_v1.tsv"
+    },
+    {
+      "id": 7,
+      "decision": "Penalized versus ordinary Cox",
+      "question": "Should the primary model be an ordinary Cox model or a penalized one?",
+      "evidence": "85 events / 3 predictors ~= 28 events per predictor, which is comfortable for an ordinary Cox model; penalization is a judgement call, not a data constraint.",
+      "status": "UNRESOLVED",
+      "owner": "modeling",
+      "blocking_primary_analysis": true,
+      "artifact": ""
+    },
+    {
+      "id": 8,
+      "decision": "Minimum-follow-up sensitivity analyses",
+      "question": "Should any minimum-observed-follow-up restriction be run as a sensitivity analysis?",
+      "evidence": "thresholds 30/90/180/365/730d retain 349/329/314/286/195 survival participants; NO event is ever removed (removals are exclusively censored). Conditioning on future follow-up is selection on post-baseline information.",
+      "status": "UNRESOLVED",
+      "owner": "methodology",
+      "blocking_primary_analysis": false,
+      "artifact": "mci_survival_feature_scenario_counts_v1.tsv"
+    },
+    {
+      "id": 9,
+      "decision": "Low / medium / high risk-group definition",
+      "question": "How should predicted risk be discretised into risk groups, if at all?",
+      "evidence": "NOT addressed by Person 1. No cutoff of any kind has been selected.",
+      "status": "UNRESOLVED",
+      "owner": "clinical + modeling",
+      "blocking_primary_analysis": false,
+      "artifact": ""
+    }
+  ],
+  "reproduce": "for nb in 01c_mci_survival_cohort_freeze 01d_mci_survival_manual_qc_packet 01e_mci_survival_feature_availability_audit 01f_mci_survival_handoff_package; do Data/.venv/bin/python -m nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1200 \"notebooks/${nb}.ipynb\" || exit 1; done"
+}

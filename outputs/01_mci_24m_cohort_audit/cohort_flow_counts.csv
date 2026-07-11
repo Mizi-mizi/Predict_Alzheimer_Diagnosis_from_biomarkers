@@ -1,0 +1,12 @@
+step,n,reason,pct_of_prev_step
+Total unique participants (DXSUM clinical dataset),3789,,
+Participants with >=1 MCI diagnosis (dated),1801,"all MCI, plasma not required",47.5
+Eligible MCI anchor visit = MCI + plasma at anchor  [Cohort A],535,"earliest MCI plasma draw, dx aligned +/-90d",29.7
+Plasma biomarker data at anchor,535,p-tau217 present for all anchors,100.0
+24-month outcome ascertained  [Cohort B],139,Stable or Progressed only,26.0
+  - Stable MCI at 24 months,105,non-dem dx in 18-30m window,
+  - Progressed to dementia within 24 months,34,dementia <=24m,
+  - Outcome unascertained / insufficient follow-up,396,"reported, not modeled",
+Core-biomarker complete cohort  [Cohort C],135,"p-tau217+Aβ42+NfL+GFAP+APOE4+age, outcome-ascertained",97.1
+Expanded-biomarker complete cohort  [Cohort D],135,C + Aβ40 + Aβ42/Aβ40,100.0
+Future clinical-adjusted cohort  [Cohort E],135,= C; only 'age' available (sex/educ/comorbid absent),100.0

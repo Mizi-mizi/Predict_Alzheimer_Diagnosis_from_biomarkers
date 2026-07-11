@@ -1,0 +1,11 @@
+row_type	stratum_id	description	universe	selection_rule	requested_n	eligible_n	priority_band_n	selected_n	shortfall	rids
+stratum	S0_mandatory_pre_anchor_dementia	all participants with >=1 dementia dx BEFORE the anchor	anchor cohort (A)	ALL flagged participants (mandatory; no sampling)	8	8	8	8	0	467|4115|4506|4706|6976|7070|10251|10322
+stratum	S1_random_survival	10 random participants from the survival cohort	survival cohort (B)	rng([seed,1]).choice over sorted RIDs, without replacement	10	410	410	10	0	448|1222|2180|6007|6312|6362|6605|6889|6947|7016
+stratum	S2_anchor_boundary_70_90d	10 anchor matches nearest the +/-90d boundary (priority |offset| 70-90d)	anchor cohort (A)	sort |offset| DESC, RID ASC; take top 10 (priority band |offset| 70-90d)	10	535	26	10	0	2200|2392|4067|4742|4809|6696|6883|10098|10843|10850
+stratum	S3_rapid_progression	10 fastest progressors (priority event <=180d)	survival-cohort events	sort time-to-event ASC, RID ASC; take top 10 (priority band <= 180d)	10	86	2	10	0	256|269|567|723|4240|4366|4796|6345|6939|7088
+stratum	S4_random_censored	10 random censored participants	censored participants	rng([seed,4]).choice over sorted RIDs, without replacement	10	324	324	10	0	2180|4351|6240|6696|6804|6832|6899|10120|10276|10443
+summary	TOTAL_BEFORE_DEDUP	sum of all strata			48			48		
+summary	TOTAL_UNIQUE_AFTER_DEDUP	unique participants in the packet						46		256|269|448|467|567|723|1222|2180|2200|2392|4067|4115|4240|4351|4366|4506|4706|4742|4796|4809|6007|6240|6312|6345|6362|6605|6696|6804|6832|6883|6889|6899|6939|6947|6976|7016|7070|7088|10098|10120|10251|10276|10322|10443|10843|10850
+summary	OVERLAP_MULTI_STRATUM	participants appearing in >1 stratum						2		2180|6696
+overlap_pair	S1_random_survival & S4_random_censored	participants shared by these two strata						1		2180
+overlap_pair	S2_anchor_boundary_70_90d & S4_random_censored	participants shared by these two strata						1		6696

@@ -1,0 +1,13 @@
+scenario_id	scenario_label	scenario_type	threshold_days	anchor_n	anchor_delta	survival_n	survival_events	survival_censored	survival_delta_n	survival_delta_events	primary_n	primary_events	primary_delta_n	primary_delta_events	m2_complete_n	m2_events	n_removed	notes
+S1_frozen_v1	Frozen v1 (authoritative)	frozen		535.0	0.0	410	86.0	324.0	0.0	0.0	401.0	85.0	0.0	0.0	401.0	85.0	0.0	the cohort of record
+S2_exclude_prior_dementia	Exclude any dementia dx BEFORE the anchor	exclusion		527.0	-8.0	405	84.0	321.0	-5.0	-2.0	397.0	84.0	-4.0	-1.0	397.0	84.0	5.0	SCENARIO ONLY — not an adjudication; awaits Build 2 human review
+S3_minfu_30d	Outcome ascertained at >= 30 days	min_followup	30.0	535.0	0.0	349	86.0	263.0	-61.0	0.0	342.0	85.0	-59.0	0.0	342.0	85.0	61.0	removed 61 (61 censored, 0 events) — removals are EXCLUSIVELY censored
+S3_minfu_90d	Outcome ascertained at >= 90 days	min_followup	90.0	535.0	0.0	329	86.0	243.0	-81.0	0.0	325.0	85.0	-76.0	0.0	325.0	85.0	81.0	removed 81 (81 censored, 0 events) — removals are EXCLUSIVELY censored
+S3_minfu_180d	Outcome ascertained at >= 180 days	min_followup	180.0	535.0	0.0	314	86.0	228.0	-96.0	0.0	310.0	85.0	-91.0	0.0	310.0	85.0	96.0	removed 96 (96 censored, 0 events) — removals are EXCLUSIVELY censored
+S3_minfu_365d	Outcome ascertained at >= 365 days	min_followup	365.0	535.0	0.0	286	86.0	200.0	-124.0	0.0	284.0	85.0	-117.0	0.0	284.0	85.0	124.0	removed 124 (124 censored, 0 events) — removals are EXCLUSIVELY censored
+S3_minfu_730d	Outcome ascertained at >= 730 days	min_followup	730.0	535.0	0.0	195	86.0	109.0	-215.0	0.0	194.0	85.0	-207.0	0.0	194.0	85.0	215.0	removed 215 (215 censored, 0 events) — removals are EXCLUSIVELY censored
+S4_exclude_censor_is_anchor_visit	Exclude participants censored at the anchor-matching MCI visit	flag_exclusion		535.0	0.0	336	86.0	250.0	-74.0	0.0	330.0	85.0	-71.0	0.0	330.0	85.0	74.0	SCENARIO ONLY — these contribute <=90d of follow-up (median 12d)
+S4_overlap	censor-is-anchor-visit  AND  follow-up <= 30 days	overlap				61												|CIA|=74, |follow-up <= 30 days|=62
+S4_overlap	censor-is-anchor-visit  AND  follow-up <= 90 days	overlap				74												|CIA|=74, |follow-up <= 90 days|=83
+S4_overlap	censor-is-anchor-visit  AND  prior-dementia history	overlap				1												|CIA|=74, |prior-dementia history|=5
+S4_overlap	censor-is-anchor-visit  AND  primary complete-case (C)	overlap				71												|CIA|=74, |primary complete-case (C)|=401

@@ -1,0 +1,14 @@
+variable,raw_column,role,cohort,n_available,n_missing,pct_missing
+ptau217,pT217_F,primary,Survival-follow-up (B),410,0,0.0
+APOE4_COUNT,GENOTYPE,primary,Survival-follow-up (B),401,9,2.2
+entry_age,entry_age,primary,Survival-follow-up (B),410,0,0.0
+age_at_anchor_approx,derived,primary(approx),Survival-follow-up (B),410,0,0.0
+gfap,GFAP_Q,secondary,Survival-follow-up (B),367,43,10.5
+nfl,NfL_Q,secondary,Survival-follow-up (B),367,43,10.5
+abeta42,AB42_F,secondary,Survival-follow-up (B),408,2,0.5
+abeta40,AB40_F,secondary,Survival-follow-up (B),408,2,0.5
+ratio_ab42_ab40,AB42_F/AB40_F,secondary,Survival-follow-up (B),408,2,0.5
+CDRSB,CDRSB,benchmark,Survival-follow-up (B),321,89,21.7
+FAQTOTAL,FAQTOTAL,benchmark,Survival-follow-up (B),379,31,7.6
+MMSCORE,MMSCORE,benchmark,Survival-follow-up (B),361,49,12.0
+MOCA,MOCA,benchmark,Survival-follow-up (B),322,88,21.5

@@ -1,0 +1,25 @@
+analysis_variable,raw_source_file,raw_source_column,id_field,visit_field,timepoint_rule,definition,unit,role,notes,pct_missing_ascertained
+ptau217,UPENN_PLASMA_FUJIREBIO_QUANTERIX,pT217_F,RID,VISCODE2/EXAMDATE,anchor plasma draw,Fujirebio plasma p-tau217,pg/mL,primary biomarker predictor,log-transform likely for future modeling; all values >0 after sentinel removal,0.0
+abeta42,UPENN_PLASMA_FUJIREBIO_QUANTERIX,AB42_F,RID,VISCODE2/EXAMDATE,anchor plasma draw,Fujirebio plasma Aβ42,pg/mL,primary biomarker predictor,few -4 sentinels -> NaN,1.4
+abeta40,UPENN_PLASMA_FUJIREBIO_QUANTERIX,AB40_F,RID,VISCODE2/EXAMDATE,anchor plasma draw,Fujirebio plasma Aβ40,pg/mL,primary biomarker predictor,enables Aβ42/Aβ40 ratio,1.4
+ratio_ab42_ab40,derived,AB42_F / AB40_F,RID,VISCODE2/EXAMDATE,anchor plasma draw,recomputed Aβ42/Aβ40 ratio (derived),ratio,primary biomarker predictor,vendor AB42_AB40_F retained separately; agreement checked,1.4
+nfl,UPENN_PLASMA_FUJIREBIO_QUANTERIX,NfL_Q,RID,VISCODE2/EXAMDATE,anchor plasma draw,Quanterix plasma NfL,pg/mL,primary biomarker predictor,use _Q (Quanterix); NfL_F mostly missing; log-transform likely,0.0
+gfap,UPENN_PLASMA_FUJIREBIO_QUANTERIX,GFAP_Q,RID,VISCODE2/EXAMDATE,anchor plasma draw,Quanterix plasma GFAP,pg/mL,primary biomarker predictor,use _Q; log-transform likely,0.0
+APOE4_COUNT,APOERES,GENOTYPE,RID,bl/sc,time-invariant,count of '4' in ε genotype,alleles 0-2,genetic covariate,never below detection,1.4
+age,My_Table,entry_age,PTID->RID,(none),study entry,age at study entry,years,demographic covariate,"baseline entry age, NOT age at anchor visit (limitation)",0.0
+baseline_dx_harmonized,DXSUM,DIAGNOSIS,RID,VISCODE2/EXAMDATE,anchor +/-90d,"1=CN,2=MCI,3=Dementia -> label; anchor=MCI",category,exclusion/quality-control variable,anchor requires MCI,0.0
+outcome,DXSUM (follow-up),DIAGNOSIS,RID,EXAMDATE,"post-anchor, <=24m event / 18-30m window",Progressed (dementia<=24m) / Stable / Unascertained,category,outcome-defining variable,strictly post-anchor; leakage-guarded,0.0
+followup_months,DXSUM (follow-up),EXAMDATE,RID,EXAMDATE,max post-anchor dx date,follow-up duration,months,outcome-defining variable,,0.0
+CDRSB,CDR,CDRSB,RID,VISDATE,anchor +/-90d,CDR Sum of Boxes,0-18,clinical benchmark predictor,"future benchmark only, not primary biomarker",33.8
+FAQTOTAL,FAQ,FAQTOTAL,RID,VISDATE,anchor +/-90d,Functional Activities Questionnaire total,0-30,clinical benchmark predictor,,4.3
+MMSCORE,MMSE,MMSCORE,RID,VISDATE,anchor +/-90d,Mini-Mental State Exam total,0-30,clinical benchmark predictor,,5.8
+MOCA,MOCA,MOCA,RID,VISDATE,anchor +/-90d,Montreal Cognitive Assessment total,0-30,clinical benchmark predictor,not collected in ADNI1,38.8
+sex,(not in data),(none),-,-,-,requested but absent from all project files,-,not available / not usable,cannot be used in future study as-is,100.0
+education,(not in data),(none),-,-,-,requested but absent from all project files,-,not available / not usable,cannot be used in future study as-is,100.0
+race_ethnicity,(not in data),(none),-,-,-,requested but absent from all project files,-,not available / not usable,cannot be used in future study as-is,100.0
+diabetes,(not in data),(none),-,-,-,requested but absent from all project files,-,not available / not usable,cannot be used in future study as-is,100.0
+hypertension,(not in data),(none),-,-,-,requested but absent from all project files,-,not available / not usable,cannot be used in future study as-is,100.0
+cardiovascular_disease,(not in data),(none),-,-,-,requested but absent from all project files,-,not available / not usable,cannot be used in future study as-is,100.0
+stroke_TIA,(not in data),(none),-,-,-,requested but absent from all project files,-,not available / not usable,cannot be used in future study as-is,100.0
+depression,(not in data),(none),-,-,-,requested but absent from all project files,-,not available / not usable,cannot be used in future study as-is,100.0
+kidney_renal,(not in data),(none),-,-,-,requested but absent from all project files,-,not available / not usable,cannot be used in future study as-is,100.0

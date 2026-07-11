@@ -1,0 +1,47 @@
+RID	PTID	strata	is_mandatory_pre_anchor_dementia	anchor_date	matched_mci_date	day_difference_signed	day_difference_abs	event_status	event_date	censor_date	followup_days	followup_eligible	primary_eligible	n_pre_anchor_dementia_dx	days_last_pre_anchor_dementia_to_anchor	warning_flags_summary	qc_anchor_status	qc_outcome_status	qc_overall_status	qc_prior_dementia_history_status	qc_prior_dementia_record_plausibility	qc_incident_event_validity	qc_diagnostic_reversion_interpretation	qc_primary_cohort_recommendation	qc_sensitivity_analysis_recommendation	recommended_action	reviewer_name	review_date	reviewer_notes
+256	027_S_0256	S3_rapid_progression	False	2006-04-20	2006-04-05	15.0	15.0	1.0	2006-10-04		167.0	True	True	0		dementia_within_180d													
+269	098_S_0269	S3_rapid_progression	False	2006-04-14	2006-04-14	0.0	0.0	1.0	2006-10-19		188.0	True	True	0		none													
+448	005_S_0448	S1_random_survival	False	2006-05-15	2006-05-15	0.0	0.0	1.0	2014-05-20		2927.0	True	True	0		none													
+467	037_S_0467	S0_mandatory_pre_anchor_dementia	True	2017-09-13	2017-09-19	-6.0	6.0	1.0	2018-09-21		373.0	True	True	5	450.0	dementia_before_anchor|reversion_sequence_before_anchor|nonmonotonic_dx_sequence													
+567	033_S_0567	S3_rapid_progression	False	2006-06-05	2006-06-05	0.0	0.0	1.0	2006-12-04		182.0	True	True	0		none													
+723	033_S_0723	S3_rapid_progression	False	2006-08-02	2006-08-03	-1.0	1.0	1.0	2007-02-22		204.0	True	True	0		none													
+1222	007_S_1222	S1_random_survival	False	2024-01-29	2024-01-30	-1.0	1.0	0.0		2024-01-30	1.0	True	True	0		censor_is_anchor_matching_visit													
+2180	018_S_2180	S1_random_survival|S4_random_censored	False	2025-03-11	2025-03-26	-15.0	15.0	0.0		2025-03-26	15.0	True	True	0		nonmonotonic_dx_sequence|censor_is_anchor_matching_visit													
+2200	109_S_2200	S2_anchor_boundary_70_90d	False	2016-03-03	2015-12-04	90.0	90.0					False	False	0		anchor_offset_70_90d													
+2392	114_S_2392	S2_anchor_boundary_70_90d	False	2025-03-31	2025-01-08	82.0	82.0	0.0		2025-08-27	149.0	True	True	0		anchor_offset_70_90d|nonmonotonic_dx_sequence													
+4067	068_S_4067	S2_anchor_boundary_70_90d	False	2017-07-27	2017-10-25	-90.0	90.0	0.0		2017-10-25	90.0	True	True	0		anchor_offset_70_90d|censor_is_anchor_matching_visit													
+4115	023_S_4115	S0_mandatory_pre_anchor_dementia	True	2024-01-24	2024-01-19	5.0	5.0	0.0		2025-02-05	378.0	True	True	4	726.0	dementia_before_anchor|reversion_sequence_before_anchor|nonmonotonic_dx_sequence													
+4240	127_S_4240	S3_rapid_progression	False	2011-10-11	2011-10-26	-15.0	15.0	1.0	2012-05-17		219.0	True	True	0		none													
+4351	137_S_4351	S4_random_censored	False	2024-09-17	2024-10-16	-29.0	29.0	0.0		2025-10-09	387.0	True	True	0		nonmonotonic_dx_sequence													
+4366	011_S_4366	S3_rapid_progression	False	2011-12-01	2011-12-01	0.0	0.0	1.0	2012-11-13		348.0	True	True	0		none													
+4506	098_S_4506	S0_mandatory_pre_anchor_dementia	True	2018-11-15	2018-12-11	-26.0	26.0	0.0		2021-05-24	921.0	True	True	2	1331.0	dementia_before_anchor|reversion_sequence_before_anchor|nonmonotonic_dx_sequence													
+4706	037_S_4706	S0_mandatory_pre_anchor_dementia	True	2025-02-20	2025-04-01	-40.0	40.0	0.0		2025-04-01	40.0	True	True	1	4296.0	dementia_before_anchor|reversion_sequence_before_anchor|nonmonotonic_dx_sequence|censor_is_anchor_matching_visit													
+4742	128_S_4742	S2_anchor_boundary_70_90d	False	2024-10-17	2025-01-07	-82.0	82.0	0.0		2025-09-09	327.0	True	True	0		anchor_offset_70_90d|cognitive_score_after_anchor													
+4796	023_S_4796	S3_rapid_progression	False	2012-10-04	2012-10-22	-18.0	18.0	1.0	2013-03-27		174.0	True	True	0		dementia_within_180d													
+4809	018_S_4809	S2_anchor_boundary_70_90d	False	2016-07-15	2016-10-05	-82.0	82.0	0.0		2016-10-05	82.0	True	True	0		anchor_offset_70_90d|censor_is_anchor_matching_visit													
+6007	002_S_6007	S1_random_survival	False	2024-11-01	2024-10-21	11.0	11.0	0.0		2025-10-14	347.0	True	True	0		none													
+6240	141_S_6240	S4_random_censored	False	2024-06-17	2024-08-15	-59.0	59.0	0.0		2025-06-17	365.0	True	True	0		cognitive_score_after_anchor													
+6312	021_S_6312	S1_random_survival	False	2022-09-15	2022-09-19	-4.0	4.0	0.0		2022-09-19	4.0	True	True	0		cognitive_score_after_anchor|censor_is_anchor_matching_visit													
+6345	941_S_6345	S3_rapid_progression	False	2018-06-04	2018-05-14	21.0	21.0	1.0	2019-05-15		345.0	True	True	0		none													
+6362	098_S_6362	S1_random_survival	False	2024-06-05	2024-07-02	-27.0	27.0	0.0		2024-07-02	27.0	True	True	0		censor_is_anchor_matching_visit													
+6605	341_S_6605	S1_random_survival	False	2018-11-15	2018-11-15	0.0	0.0	0.0		2020-12-02	748.0	True	True	0		none													
+6696	006_S_6696	S2_anchor_boundary_70_90d|S4_random_censored	False	2019-07-12	2019-10-10	-90.0	90.0	0.0		2019-10-10	90.0	True	True	0		anchor_offset_70_90d|censor_is_anchor_matching_visit													
+6804	032_S_6804	S4_random_censored	False	2019-11-18	2019-12-02	-14.0	14.0	0.0		2025-01-16	1886.0	True	True	0		nonmonotonic_dx_sequence													
+6832	052_S_6832	S4_random_censored	False	2020-01-09	2020-01-09	0.0	0.0	0.0		2021-03-15	431.0	True	True	0		none													
+6883	137_S_6883	S2_anchor_boundary_70_90d	False	2020-12-21	2020-09-24	88.0	88.0					False	False	0		anchor_offset_70_90d													
+6889	033_S_6889	S1_random_survival	False	2020-10-14	2020-09-25	19.0	19.0	0.0		2025-10-16	1828.0	True	True	0		cognitive_score_after_anchor													
+6899	305_S_6899	S4_random_censored	False	2021-02-24	2021-03-10	-14.0	14.0	0.0		2022-07-11	502.0	True	True	0		cognitive_score_after_anchor													
+6939	016_S_6939	S3_rapid_progression	False	2021-06-21	2021-05-04	48.0	48.0	1.0	2022-03-08		260.0	True	True	0		nonmonotonic_dx_sequence													
+6947	035_S_6947	S1_random_survival	False	2021-06-07	2021-06-07	0.0	0.0	0.0		2025-06-09	1463.0	True	True	0		none													
+6976	033_S_6976	S0_mandatory_pre_anchor_dementia	True	2025-07-08	2025-07-08	0.0	0.0					False	False	4	719.0	dementia_before_anchor|reversion_sequence_before_anchor|nonmonotonic_dx_sequence													
+7016	019_S_7016	S1_random_survival	False	2021-11-02	2021-10-27	6.0	6.0	0.0		2025-11-07	1466.0	True	True	0		none													
+7070	036_S_7070	S0_mandatory_pre_anchor_dementia	True	2025-04-30	2025-04-30	0.0	0.0					False	False	1	371.0	dementia_before_anchor|reversion_sequence_before_anchor|nonmonotonic_dx_sequence													
+7088	033_S_7088	S3_rapid_progression	False	2022-07-27	2022-08-05	-9.0	9.0	1.0	2023-07-11		349.0	True	True	0		none													
+10098	037_S_10098	S2_anchor_boundary_70_90d	False	2024-09-12	2024-12-10	-89.0	89.0	0.0		2026-03-02	536.0	True	True	0		anchor_offset_70_90d|cognitive_score_after_anchor													
+10120	073_S_10120	S4_random_censored	False	2024-06-13	2024-05-14	30.0	30.0	0.0		2024-11-22	162.0	True	True	0		cognitive_score_after_anchor													
+10251	389_S_10251	S0_mandatory_pre_anchor_dementia	True	2024-12-04	2024-12-06	-2.0	2.0	1.0	2026-02-13		436.0	True	False	1	30.0	dementia_before_anchor|reversion_sequence_before_anchor|nonmonotonic_dx_sequence													
+10276	033_S_10276	S4_random_censored	False	2025-01-29	2024-11-18	72.0	72.0	0.0		2025-12-02	307.0	True	False	0		anchor_offset_70_90d													
+10322	036_S_10322	S0_mandatory_pre_anchor_dementia	True	2024-12-02	2024-12-02	0.0	0.0					False	False	1	35.0	dementia_before_anchor|reversion_sequence_before_anchor|nonmonotonic_dx_sequence													
+10443	019_S_10443	S4_random_censored	False	2025-02-11	2025-02-17	-6.0	6.0	0.0		2025-02-17	6.0	True	True	0		censor_is_anchor_matching_visit													
+10843	158_S_10843	S2_anchor_boundary_70_90d	False	2025-03-26	2025-06-17	-83.0	83.0	0.0		2025-08-13	140.0	True	True	0		anchor_offset_70_90d|cognitive_score_after_anchor													
+10850	158_S_10850	S2_anchor_boundary_70_90d	False	2025-03-27	2025-06-18	-83.0	83.0	0.0		2025-08-18	144.0	True	True	0		anchor_offset_70_90d|cognitive_score_after_anchor													

@@ -1,0 +1,536 @@
+RID	PTID	anchor_date	final_inclusion_stage	exclusion_stage	exclusion_reason	broad_anchor_eligible	followup_eligible	primary_eligible	excl_no_usable_followup	excl_nonpositive_followup	excl_baseline_dementia	excl_missing_entry_age	excl_missing_apoe4	excl_missing_ptau217	excl_other	censoring_reason	n_post_anchor_visits	event_indicator	entry_age_available	apoe4_available	ptau217_available	qc_dementia_on_or_before_anchor	pre_anchor_dementia_n	sameday_dementia_at_anchor
+8	011_S_0008	2015-10-29	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+42	023_S_0042	2005-11-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False		10	1	True	True	True	False	0	0
+69	100_S_0069	2024-04-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+108	123_S_0108	2006-02-14	primary_complete_case			True	True	True	False	False	False	False	False	False	False		7	1	True	True	True	False	0	0
+127	068_S_0127	2017-08-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	6	0	True	True	True	False	0	0
+200	128_S_0200	2024-09-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+210	068_S_0210	2017-11-16	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+214	032_S_0214	2006-03-06	primary_complete_case			True	True	True	False	False	False	False	False	False	False		12	1	True	True	True	False	0	0
+256	027_S_0256	2006-04-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False		9	1	True	True	True	False	0	0
+269	098_S_0269	2006-04-14	primary_complete_case			True	True	True	False	False	False	False	False	False	False		7	1	True	True	True	False	0	0
+284	067_S_0284	2007-05-02	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+296	100_S_0296	2017-01-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+326	011_S_0326	2006-04-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False		5	1	True	True	True	False	0	0
+362	011_S_0362	2006-04-19	primary_complete_case			True	True	True	False	False	False	False	False	False	False		7	1	True	True	True	False	0	0
+376	023_S_0376	2006-04-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False		7	1	True	True	True	False	0	0
+377	037_S_0377	2019-06-05	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+378	114_S_0378	2006-04-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False		9	1	True	True	True	False	0	0
+408	027_S_0408	2006-05-19	primary_complete_case			True	True	True	False	False	False	False	False	False	False		9	1	True	True	True	False	0	0
+420	010_S_0420	2018-10-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+448	005_S_0448	2006-05-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False		10	1	True	True	True	False	0	0
+458	114_S_0458	2006-05-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+467	037_S_0467	2017-09-13	primary_complete_case			True	True	True	False	False	False	False	False	False	False		3	1	True	True	True	True	5	0
+514	033_S_0514	2006-06-09	primary_complete_case			True	True	True	False	False	False	False	False	False	False		7	1	True	True	True	False	0	0
+518	073_S_0518	2006-12-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False		6	1	True	True	True	False	0	0
+546	005_S_0546	2013-11-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+563	014_S_0563	2006-07-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False		8	1	True	True	True	False	0	0
+567	033_S_0567	2006-06-05	primary_complete_case			True	True	True	False	False	False	False	False	False	False		5	1	True	True	True	False	0	0
+649	116_S_0649	2006-08-16	primary_complete_case			True	True	True	False	False	False	False	False	False	False		7	1	True	True	True	False	0	0
+702	016_S_0702	2006-08-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False		8	1	True	True	True	False	0	0
+709	126_S_0709	2006-08-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	10	0	True	True	True	False	0	0
+723	033_S_0723	2006-08-02	primary_complete_case			True	True	True	False	False	False	False	False	False	False		6	1	True	True	True	False	0	0
+739	033_S_0739	2006-07-31	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+741	033_S_0741	2016-08-10	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+821	031_S_0821	2006-09-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+830	031_S_0830	2006-09-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False		8	1	True	True	True	False	0	0
+834	116_S_0834	2006-10-17	primary_complete_case			True	True	True	False	False	False	False	False	False	False		7	1	True	True	True	False	0	0
+861	011_S_0861	2006-10-04	primary_complete_case			True	True	True	False	False	False	False	False	False	False		6	1	True	True	True	False	0	0
+880	099_S_0880	2006-10-31	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+906	033_S_0906	2006-10-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False		9	1	True	True	True	False	0	0
+908	003_S_0908	2024-01-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+914	029_S_0914	2007-01-03	primary_complete_case			True	True	True	False	False	False	False	False	False	False		11	1	True	True	True	False	0	0
+978	032_S_0978	2006-11-02	primary_complete_case			True	True	True	False	False	False	False	False	False	False		8	1	True	True	True	False	0	0
+1032	127_S_1032	2006-12-14	primary_complete_case			True	True	True	False	False	False	False	False	False	False		13	1	True	True	True	False	0	0
+1080	011_S_1080	2006-12-06	primary_complete_case			True	True	True	False	False	False	False	False	False	False		8	1	True	True	True	False	0	0
+1116	033_S_1116	2006-12-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False		9	1	True	True	True	False	0	0
+1118	114_S_1118	2006-12-19	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	10	0	True	True	True	False	0	0
+1155	002_S_1155	2025-06-18	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+1169	032_S_1169	2017-12-14	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+1222	007_S_1222	2024-01-29	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+1246	129_S_1246	2007-03-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	9	0	True	True	True	False	0	0
+1271	116_S_1271	2007-03-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False		8	1	True	True	True	False	0	0
+1282	011_S_1282	2007-02-27	primary_complete_case			True	True	True	False	False	False	False	False	False	False		6	1	True	True	True	False	0	0
+1357	073_S_1357	2007-04-19	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+1384	029_S_1384	2007-04-05	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	5	0	True	True	True	False	0	0
+1393	024_S_1393	2007-04-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False		7	1	True	True	True	False	0	0
+1418	041_S_1418	2019-07-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+1425	041_S_1425	2007-08-17	primary_complete_case			True	True	True	False	False	False	False	False	False	False		6	1	True	True	True	False	0	0
+2058	007_S_2058	2011-11-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+2068	023_S_2068	2017-10-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+2119	032_S_2119	2010-10-26	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	7	0	True	True	True	False	0	0
+2121	082_S_2121	2025-05-12	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+2123	128_S_2123	2024-08-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+2180	018_S_2180	2025-03-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+2183	027_S_2183	2015-12-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+2187	068_S_2187	2019-09-25	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+2190	073_S_2190	2011-02-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+2200	109_S_2200	2016-03-03	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+2238	094_S_2238	2025-05-01	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+2245	027_S_2245	2024-06-25	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+2336	027_S_2336	2016-05-06	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+2374	003_S_2374	2017-11-29	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+2392	114_S_2392	2025-03-31	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+2394	007_S_2394	2024-11-06	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+4036	941_S_4036	2024-03-27	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4058	014_S_4058	2011-06-13	primary_complete_case			True	True	True	False	False	False	False	False	False	False		4	1	True	True	True	False	0	0
+4067	068_S_4067	2017-07-27	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4071	037_S_4071	2015-11-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+4076	099_S_4076	2024-05-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4115	023_S_4115	2024-01-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	True	4	0
+4160	141_S_4160	2018-07-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4168	005_S_4168	2025-04-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+4170	123_S_4170	2024-10-21	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+4175	116_S_4175	2011-08-30	primary_complete_case			True	True	True	False	False	False	False	False	False	False		8	1	True	True	True	False	0	0
+4179	033_S_4179	2020-01-29	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+4198	127_S_4198	2017-10-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+4240	127_S_4240	2011-10-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False		5	1	True	True	True	False	0	0
+4263	014_S_4263	2011-10-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False		5	1	True	True	True	False	0	0
+4327	029_S_4327	2014-01-08	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+4349	018_S_4349	2024-09-16	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4351	137_S_4351	2024-09-17	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+4356	135_S_4356	2024-10-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4366	011_S_4366	2011-12-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+4380	109_S_4380	2025-01-27	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+4400	018_S_4400	2025-02-25	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4431	068_S_4431	2017-09-25	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+4474	031_S_4474	2012-08-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4489	135_S_4489	2024-05-29	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4506	098_S_4506	2018-11-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	True	2	0
+4514	126_S_4514	2024-06-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+4579	013_S_4579	2014-06-02	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4675	126_S_4675	2012-05-03	primary_complete_case			True	True	True	False	False	False	False	False	False	False		5	1	True	True	True	False	0	0
+4706	037_S_4706	2025-02-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	True	1	0
+4722	135_S_4722	2024-04-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4723	135_S_4723	2024-04-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4742	128_S_4742	2024-10-17	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+4744	021_S_4744	2017-07-13	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4765	127_S_4765	2012-06-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False		7	1	True	True	True	False	0	0
+4785	035_S_4785	2024-11-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4796	023_S_4796	2012-10-04	primary_complete_case			True	True	True	False	False	False	False	False	False	False		5	1	True	True	True	False	0	0
+4805	022_S_4805	2014-08-15	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+4809	018_S_4809	2016-07-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4868	018_S_4868	2012-08-09	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	7	0	True	True	True	False	0	0
+4869	027_S_4869	2021-02-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+4876	041_S_4876	2017-06-30	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+4889	018_S_4889	2016-09-14	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	9	0	True	True	True	False	0	0
+4896	126_S_4896	2024-09-25	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+4926	027_S_4926	2015-10-06	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	7	0	True	True	True	False	0	0
+4936	027_S_4936	2012-10-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False		4	1	True	True	True	False	0	0
+4944	052_S_4944	2024-07-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+5075	100_S_5075	2024-07-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+5096	100_S_5096	2015-06-11	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+5178	002_S_5178	2025-01-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+5219	029_S_5219	2024-07-25	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+5234	114_S_5234	2019-01-29	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+5253	041_S_5253	2024-12-17	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+5269	135_S_5269	2025-07-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+5273	135_S_5273	2016-08-25	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+5292	057_S_5292	2024-09-03	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+6001	027_S_6001	2021-04-19	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6002	027_S_6002	2017-02-02	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6007	002_S_6007	2024-11-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6033	024_S_6033	2017-06-28	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6041	141_S_6041	2017-08-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6046	037_S_6046	2024-06-17	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6052	941_S_6052	2017-07-25	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6056	301_S_6056	2024-08-26	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6068	941_S_6068	2017-08-31	primary_complete_case			True	True	True	False	False	False	False	False	False	False		4	1	True	True	True	False	0	0
+6075	141_S_6075	2017-10-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6080	941_S_6080	2023-11-13	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6083	037_S_6083	2017-11-27	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6110	135_S_6110	2018-11-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6125	037_S_6125	2018-02-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	5	0	True	True	True	False	0	0
+6134	036_S_6134	2018-01-09	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6141	037_S_6141	2019-03-22	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6143	131_S_6143	2018-04-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6173	127_S_6173	2022-03-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6175	099_S_6175	2024-09-17	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6180	168_S_6180	2018-06-06	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	6	0	True	True	True	False	0	0
+6206	013_S_6206	2018-07-19	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6220	109_S_6220	2019-01-17	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6221	109_S_6221	2019-01-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6236	070_S_6236	2018-03-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False		5	1	True	True	True	False	0	0
+6240	141_S_6240	2024-06-17	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6241	127_S_6241	2019-08-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False		5	1	True	True	True	False	0	0
+6243	006_S_6243	2018-04-13	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	5	0	True	True	True	False	0	0
+6252	006_S_6252	2018-04-13	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+6254	941_S_6254	2025-06-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6258	003_S_6258	2022-04-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6268	003_S_6268	2019-08-06	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6274	153_S_6274	2018-03-27	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6291	006_S_6291	2018-06-08	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	6	0	True	True	True	False	0	0
+6300	109_S_6300	2019-03-05	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6312	021_S_6312	2022-09-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6315	019_S_6315	2018-05-16	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6319	130_S_6319	2025-02-14	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6326	301_S_6326	2018-06-04	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6327	027_S_6327	2022-05-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+6329	130_S_6329	2025-06-25	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6334	023_S_6334	2022-05-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6336	153_S_6336	2018-05-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6341	007_S_6341	2018-05-30	primary_complete_case			True	True	True	False	False	False	False	False	False	False		7	1	True	True	True	False	0	0
+6345	941_S_6345	2018-06-04	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+6352	033_S_6352	2024-10-28	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6356	023_S_6356	2019-06-13	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6362	098_S_6362	2024-06-05	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6364	109_S_6364	2019-01-16	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6369	023_S_6369	2022-08-03	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6370	027_S_6370	2018-07-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6373	109_S_6373	2019-01-22	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6378	305_S_6378	2018-06-05	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6402	009_S_6402	2018-07-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	5	0	True	True	True	False	0	0
+6414	018_S_6414	2018-07-02	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	6	0	True	True	True	False	0	0
+6421	007_S_6421	2018-08-13	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6427	005_S_6427	2018-07-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6432	003_S_6432	2018-07-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6441	006_S_6441	2018-09-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6446	135_S_6446	2022-07-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6463	027_S_6463	2018-08-07	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6474	067_S_6474	2019-08-19	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6479	003_S_6479	2018-10-25	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6480	035_S_6480	2020-07-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	6	0	True	True	True	False	0	0
+6483	019_S_6483	2018-08-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False		7	1	True	True	True	False	0	0
+6498	305_S_6498	2018-09-26	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6502	014_S_6502	2024-06-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6503	012_S_6503	2022-09-13	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6512	127_S_6512	2020-10-16	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6529	067_S_6529	2018-10-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False		3	1	True	True	True	False	0	0
+6533	019_S_6533	2018-09-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6535	023_S_6535	2019-09-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False		5	1	True	True	True	False	0	0
+6541	168_S_6541	2019-09-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False		4	1	True	True	True	False	0	0
+6544	135_S_6544	2018-09-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	7	0	True	True	True	False	0	0
+6550	116_S_6550	2018-08-22	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6559	126_S_6559	2022-11-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6575	941_S_6575	2023-11-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6586	135_S_6586	2019-10-25	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	5	0	True	True	True	False	0	0
+6591	168_S_6591	2018-11-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6597	114_S_6597	2019-01-08	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6598	053_S_6598	2018-10-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6604	130_S_6604	2018-11-14	primary_complete_case			True	True	True	False	False	False	False	False	False	False		5	1	True	True	True	False	0	0
+6605	341_S_6605	2018-11-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6606	003_S_6606	2020-01-08	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6610	006_S_6610	2018-12-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6612	130_S_6612	2018-12-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6615	301_S_6615	2018-11-29	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6616	131_S_6616	2021-04-12	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6622	135_S_6622	2018-11-29	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6632	099_S_6632	2019-01-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False		3	1	True	True	True	False	0	0
+6634	168_S_6634	2019-02-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False		4	1	True	True	True	False	0	0
+6635	019_S_6635	2021-01-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6640	027_S_6640	2019-01-09	primary_complete_case			True	True	True	False	False	False	False	False	False	False		1	1	True	True	True	False	0	0
+6641	035_S_6641	2019-01-16	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6643	027_S_6643	2019-01-14	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6644	003_S_6644	2024-03-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6651	006_S_6651	2019-04-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6652	002_S_6652	2019-01-08	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6654	137_S_6654	2019-05-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6657	006_S_6657	2019-04-26	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6668	019_S_6668	2019-02-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False		5	1	True	True	True	False	0	0
+6672	006_S_6672	2019-04-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6673	073_S_6673	2021-04-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6679	153_S_6679	2019-03-08	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6681	006_S_6681	2019-05-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6682	006_S_6682	2019-05-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6688	130_S_6688	2019-03-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6691	099_S_6691	2020-12-08	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6695	002_S_6695	2019-04-15	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6696	006_S_6696	2019-07-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6697	033_S_6697	2019-04-24	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6702	023_S_6702	2019-05-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	5	0	True	True	True	False	0	0
+6703	135_S_6703	2019-04-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6707	098_S_6707	2019-08-07	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6716	022_S_6716	2019-05-29	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	5	0	True	True	True	False	0	0
+6719	051_S_6719	2022-07-19	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6726	029_S_6726	2019-07-29	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6727	006_S_6727	2019-07-26	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6731	041_S_6731	2020-10-16	primary_complete_case			True	True	True	False	False	False	False	False	False	False		5	1	True	True	True	False	0	0
+6742	305_S_6742	2019-08-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6748	010_S_6748	2019-08-06	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6755	153_S_6755	2019-07-31	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+6757	019_S_6757	2019-07-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6760	012_S_6760	2020-09-28	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6761	051_S_6761	2019-09-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6765	014_S_6765	2024-02-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6770	006_S_6770	2019-09-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False		3	1	True	True	True	False	0	0
+6771	016_S_6771	2019-07-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6775	116_S_6775	2019-08-28	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6777	301_S_6777	2021-09-28	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+6779	141_S_6779	2020-11-06	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6789	016_S_6789	2020-10-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6790	016_S_6790	2020-10-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6798	029_S_6798	2019-09-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6803	941_S_6803	2019-09-17	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6804	032_S_6804	2019-11-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6805	131_S_6805	2019-11-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False		3	1	True	True	True	False	0	0
+6809	016_S_6809	2019-10-08	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6811	301_S_6811	2019-12-05	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6816	016_S_6816	2019-10-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	6	0	True	True	True	False	0	0
+6830	129_S_6830	2019-11-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6832	052_S_6832	2020-01-09	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6842	027_S_6842	2020-02-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6845	305_S_6845	2021-01-14	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6846	024_S_6846	2020-01-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6847	022_S_6847	2020-02-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6848	129_S_6848	2020-02-19	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6852	129_S_6852	2020-02-26	primary_complete_case			True	True	True	False	False	False	False	False	False	False		3	1	True	True	True	False	0	0
+6857	129_S_6857	2024-05-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+6860	168_S_6860	2020-06-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6861	053_S_6861	2021-05-27	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6871	305_S_6871	2020-06-26	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6875	168_S_6875	2020-08-19	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6877	305_S_6877	2020-08-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6878	036_S_6878	2020-08-04	primary_complete_case			True	True	True	False	False	False	False	False	False	False		3	1	True	True	True	False	0	0
+6883	137_S_6883	2020-12-21	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6884	123_S_6884	2020-10-07	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6885	036_S_6885	2020-09-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False		4	1	True	True	True	False	0	0
+6887	036_S_6887	2020-10-06	primary_complete_case			True	True	True	False	False	False	False	False	False	False		3	1	True	True	True	False	0	0
+6888	123_S_6888	2020-11-05	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6889	033_S_6889	2020-10-14	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	6	0	True	True	True	False	0	0
+6890	021_S_6890	2020-12-09	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	5	0	True	True	True	False	0	0
+6894	036_S_6894	2020-12-03	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6897	036_S_6897	2021-02-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6899	305_S_6899	2021-02-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6901	020_S_6901	2021-03-15	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6911	070_S_6911	2021-03-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False		1	1	True	True	True	False	0	0
+6916	036_S_6916	2021-04-06	primary_complete_case			True	True	True	False	False	False	False	False	False	False		4	1	True	True	True	False	0	0
+6919	137_S_6919	2024-01-29	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6920	014_S_6920	2024-04-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+6926	016_S_6926	2021-08-16	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6929	073_S_6929	2021-06-09	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6939	016_S_6939	2021-06-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+6944	014_S_6944	2021-08-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6947	035_S_6947	2021-06-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6961	027_S_6961	2021-06-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+6964	141_S_6964	2021-07-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False		1	1	True	True	True	False	0	0
+6969	033_S_6969	2022-07-13	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+6976	033_S_6976	2025-07-08	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	True	4	0
+6986	067_S_6986	2021-10-27	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+6988	014_S_6988	2025-03-26	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+6989	067_S_6989	2021-10-19	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+7000	035_S_7000	2021-10-04	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+7007	027_S_7007	2021-10-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+7008	067_S_7008	2021-11-03	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+7013	141_S_7013	2021-11-16	primary_complete_case			True	True	True	False	False	False	False	False	False	False		1	1	True	True	True	False	0	0
+7015	126_S_7015	2022-11-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+7016	019_S_7016	2021-11-02	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+7019	035_S_7019	2022-02-16	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+7020	067_S_7020	2021-11-22	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+7021	035_S_7021	2021-12-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False		4	1	True	True	True	False	0	0
+7023	036_S_7023	2022-01-13	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+7024	027_S_7024	2024-11-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+7025	024_S_7025	2021-11-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+7027	052_S_7027	2021-11-30	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+7029	067_S_7029	2022-02-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+7031	035_S_7031	2022-02-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+7032	131_S_7032	2022-02-17	primary_complete_case			True	True	True	False	False	False	False	False	False	False		4	1	True	True	True	False	0	0
+7037	052_S_7037	2024-06-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+7041	941_S_7041	2022-03-01	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+7049	035_S_7049	2022-09-13	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+7051	941_S_7051	2024-05-29	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+7054	027_S_7054	2022-04-04	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+7060	126_S_7060	2022-05-03	primary_complete_case			True	True	True	False	False	False	False	False	False	False		4	1	True	True	True	False	0	0
+7061	067_S_7061	2022-06-02	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+7068	067_S_7068	2022-07-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+7070	036_S_7070	2025-04-30	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	True	1	0
+7071	027_S_7071	2022-05-17	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+7073	035_S_7073	2024-06-05	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+7079	033_S_7079	2022-06-27	survival_followup_only	primary_complete_case	missing APOE4	True	True	False	False	False	False	False	True	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	False	True	False	0	0
+7083	126_S_7083	2022-06-22	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	4	0	True	True	True	False	0	0
+7085	941_S_7085	2022-07-11	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+7086	053_S_7086	2022-11-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+7088	033_S_7088	2022-07-27	primary_complete_case			True	True	True	False	False	False	False	False	False	False		4	1	True	True	True	False	0	0
+7105	035_S_7105	2022-10-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False		3	1	True	True	True	False	0	0
+7121	035_S_7121	2023-04-04	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10002	941_S_10002	2023-09-19	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+10003	941_S_10003	2023-09-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+10004	941_S_10004	2023-10-04	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10005	033_S_10005	2023-10-04	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+10008	033_S_10008	2023-10-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+10009	033_S_10009	2023-10-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+10011	941_S_10011	2023-10-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+10016	033_S_10016	2023-11-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10017	073_S_10017	2023-10-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	3	0	True	True	True	False	0	0
+10025	033_S_10025	2024-01-17	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+10036	100_S_10036	2025-07-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10038	941_S_10038	2024-03-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10039	941_S_10039	2024-02-28	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10047	073_S_10047	2025-04-14	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10048	035_S_10048	2024-02-28	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10052	035_S_10052	2024-02-27	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10053	035_S_10053	2024-02-28	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10057	137_S_10057	2024-04-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10070	389_S_10070	2024-06-25	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10076	389_S_10076	2024-06-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10080	070_S_10080	2024-04-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10097	135_S_10097	2024-05-07	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10098	037_S_10098	2024-09-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10102	019_S_10102	2024-05-28	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10103	941_S_10103	2024-05-01	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10111	941_S_10111	2024-05-28	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10115	389_S_10115	2024-10-16	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10118	033_S_10118	2024-06-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10120	073_S_10120	2024-06-13	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10123	301_S_10123	2024-06-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10124	016_S_10124	2024-06-17	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10127	389_S_10127	2024-10-22	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10138	016_S_10138	2024-07-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+10140	389_S_10140	2024-10-28	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10151	129_S_10151	2024-07-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10152	019_S_10152	2024-08-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10154	082_S_10154	2024-09-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10155	082_S_10155	2024-09-18	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10156	389_S_10156	2024-10-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10157	014_S_10157	2024-09-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10159	052_S_10159	2025-02-19	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10165	036_S_10165	2024-08-13	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10167	073_S_10167	2024-08-08	survival_followup_only	primary_complete_case	missing APOE4	True	True	False	False	False	False	False	True	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	False	True	False	0	0
+10174	016_S_10174	2024-08-27	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10181	022_S_10181	2024-10-31	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10189	016_S_10189	2024-10-08	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10193	035_S_10193	2024-08-26	survival_followup_only	primary_complete_case	missing APOE4	True	True	False	False	False	False	False	True	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	False	True	False	0	0
+10195	052_S_10195	2024-10-22	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10204	135_S_10204	2024-09-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10205	005_S_10205	2024-10-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10210	033_S_10210	2024-10-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10212	941_S_10212	2024-09-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10214	130_S_10214	2024-10-08	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10228	073_S_10228	2025-05-15	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10229	033_S_10229	2024-10-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10240	005_S_10240	2025-02-06	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10247	301_S_10247	2024-12-03	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10251	389_S_10251	2024-12-04	survival_followup_only	primary_complete_case	missing APOE4	True	True	False	False	False	False	False	True	False	False		2	1	True	False	True	True	1	0
+10264	130_S_10264	2024-10-31	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10271	126_S_10271	2024-10-22	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10276	033_S_10276	2025-01-29	survival_followup_only	primary_complete_case	missing APOE4	True	True	False	False	False	False	False	True	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	False	True	False	0	0
+10285	137_S_10285	2025-01-23	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10287	012_S_10287	2025-02-03	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10289	027_S_10289	2024-11-19	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+10292	123_S_10292	2024-11-18	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10303	019_S_10303	2024-11-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10309	941_S_10309	2024-12-18	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10314	036_S_10314	2024-11-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10322	036_S_10322	2024-12-02	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	True	1	0
+10328	033_S_10328	2024-12-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False		1	1	True	True	True	False	0	0
+10332	135_S_10332	2024-12-19	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10340	035_S_10340	2024-11-20	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10352	073_S_10352	2025-01-23	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10354	052_S_10354	2025-01-28	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10359	011_S_10359	2025-05-21	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10372	036_S_10372	2024-12-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False		2	1	True	True	True	False	0	0
+10376	021_S_10376	2024-12-17	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10378	389_S_10378	2025-05-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10381	022_S_10381	2025-03-05	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10388	073_S_10388	2025-04-08	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10400	052_S_10400	2025-04-02	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10417	153_S_10417	2025-03-31	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10426	003_S_10426	2025-03-13	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10432	022_S_10432	2025-03-11	survival_followup_only	primary_complete_case	missing APOE4	True	True	False	False	False	False	False	True	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	False	True	False	0	0
+10436	131_S_10436	2025-02-10	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10437	021_S_10437	2025-02-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10441	016_S_10441	2025-02-19	survival_followup_only	primary_complete_case	missing APOE4	True	True	False	False	False	False	False	True	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	False	True	False	0	0
+10443	019_S_10443	2025-02-11	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10446	005_S_10446	2025-02-20	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10450	123_S_10450	2025-02-13	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10451	141_S_10451	2025-04-30	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10452	016_S_10452	2025-03-05	survival_followup_only	primary_complete_case	missing APOE4	True	True	False	False	False	False	False	True	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	False	True	False	0	0
+10455	035_S_10455	2025-02-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10457	027_S_10457	2025-02-10	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10459	135_S_10459	2025-02-25	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10460	073_S_10460	2025-03-17	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10465	073_S_10465	2025-04-10	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10466	099_S_10466	2025-04-15	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10471	019_S_10471	2025-03-11	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10474	067_S_10474	2025-04-09	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10481	022_S_10481	2025-06-02	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10486	381_S_10486	2025-03-13	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10487	381_S_10487	2025-03-13	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10492	381_S_10492	2025-04-28	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10493	381_S_10493	2025-04-28	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10495	381_S_10495	2025-05-27	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10496	381_S_10496	2025-05-27	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10499	381_S_10499	2025-03-17	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10502	381_S_10502	2025-04-16	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10504	006_S_10504	2025-03-19	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10506	381_S_10506	2025-03-17	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10507	381_S_10507	2025-05-27	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10509	381_S_10509	2025-04-28	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10510	381_S_10510	2025-04-08	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10513	381_S_10513	2025-03-18	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10514	381_S_10514	2025-04-08	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10515	381_S_10515	2025-04-21	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10517	381_S_10517	2025-04-21	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10521	381_S_10521	2025-07-01	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10523	123_S_10523	2025-03-24	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10524	381_S_10524	2025-07-01	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10528	381_S_10528	2025-04-21	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10530	035_S_10530	2025-03-27	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10532	381_S_10532	2025-04-23	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10538	381_S_10538	2025-04-21	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10559	381_S_10559	2025-05-27	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10560	381_S_10560	2025-05-14	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10562	098_S_10562	2025-07-24	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10563	381_S_10563	2025-07-21	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10564	381_S_10564	2025-03-27	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10566	381_S_10566	2025-03-18	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10570	014_S_10570	2025-05-20	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10571	381_S_10571	2025-07-21	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10575	381_S_10575	2025-07-28	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10578	381_S_10578	2025-07-02	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10585	381_S_10585	2025-07-23	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10587	389_S_10587	2025-06-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10590	381_S_10590	2025-07-02	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10597	073_S_10597	2025-04-24	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10598	381_S_10598	2025-07-22	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10600	381_S_10600	2025-07-22	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10602	141_S_10602	2025-06-12	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10603	381_S_10603	2025-07-21	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10604	381_S_10604	2025-07-23	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10605	067_S_10605	2025-07-30	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10613	381_S_10613	2025-07-23	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10614	381_S_10614	2025-07-22	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10616	381_S_10616	2025-07-29	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10617	381_S_10617	2025-07-21	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10620	009_S_10620	2025-08-01	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	False	True	False	0	0
+10627	131_S_10627	2025-04-28	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10628	021_S_10628	2025-04-16	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10639	037_S_10639	2025-08-06	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10658	005_S_10658	2025-06-05	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10671	137_S_10671	2025-06-02	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10672	052_S_10672	2025-07-22	survival_followup_only	primary_complete_case	missing APOE4	True	True	False	False	False	False	False	True	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	False	True	False	0	0
+10679	099_S_10679	2025-06-16	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10692	052_S_10692	2025-06-18	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10709	305_S_10709	2025-08-01	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10714	158_S_10714	2025-03-26	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10736	033_S_10736	2025-08-12	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10738	033_S_10738	2025-07-01	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10742	033_S_10742	2025-08-13	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10754	158_S_10754	2025-03-26	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10760	130_S_10760	2025-07-14	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10763	405_S_10763	2025-07-28	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10777	082_S_10777	2025-07-22	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10782	158_S_10782	2025-03-26	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10788	126_S_10788	2025-06-02	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10796	123_S_10796	2025-06-30	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10797	019_S_10797	2025-07-09	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10804	099_S_10804	2025-07-07	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10805	005_S_10805	2025-06-26	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10807	013_S_10807	2025-07-11	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10809	082_S_10809	2025-08-04	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10812	036_S_10812	2025-06-18	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10815	131_S_10815	2025-07-23	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10816	123_S_10816	2025-07-28	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10819	135_S_10819	2025-06-24	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10821	123_S_10821	2025-07-21	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10823	135_S_10823	2025-07-10	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10824	010_S_10824	2025-04-02	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10839	010_S_10839	2025-07-23	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10840	082_S_10840	2025-08-11	broad_anchor_only	survival_followup	no post-anchor diagnosis	True	False	False	True	False	False	False	False	False	False	no post-anchor diagnosis	0		True	True	True	False	0	0
+10843	158_S_10843	2025-03-26	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10850	158_S_10850	2025-03-27	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10855	027_S_10855	2025-08-04	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10864	019_S_10864	2025-03-31	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10866	010_S_10866	2025-04-07	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	2	0	True	True	True	False	0	0
+10873	405_S_10873	2025-08-06	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10875	301_S_10875	2025-08-05	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0
+10878	024_S_10878	2025-08-12	primary_complete_case			True	True	True	False	False	False	False	False	False	False	last non-dementia (CN/MCI) follow-up	1	0	True	True	True	False	0	0

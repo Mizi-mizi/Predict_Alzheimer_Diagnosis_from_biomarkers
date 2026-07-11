@@ -1,0 +1,8 @@
+metric,value
+median follow-up (days),420.0
+IQR follow-up (days),229-1111
+min / max follow-up (days),1 / 3694
+median time-to-dementia among events (days),758.5
+IQR time-to-dementia (days),414-1255
+events after 24 months,52
+same-day diagnosis-conflict records,0

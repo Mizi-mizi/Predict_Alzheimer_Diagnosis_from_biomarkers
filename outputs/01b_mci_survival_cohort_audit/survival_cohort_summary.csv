@@ -1,0 +1,7 @@
+cohort,n_participants,n_survival_eligible,n_events,n_censored,median_fu_days,iqr_fu_days,n_informative_at_730,events_by_365,events_by_730,events_by_1095
+A. Broad MCI plasma-anchor,535,410,86,324,420.0,229-1111,195,15,34,56
+B. Survival-follow-up,410,410,86,324,420.0,229-1111,195,15,34,56
+C. Primary-model-eligible,401,401,85,316,425.0,285-1121,194,15,33,55
+D. GFAP secondary,361,361,85,276,547.0,364-1246,194,15,33,55
+E. Amyloid-ratio secondary,399,399,83,316,425.0,292-1122,192,14,31,53
+F. Full exploratory,359,359,83,276,547.0,364-1257,192,14,31,53

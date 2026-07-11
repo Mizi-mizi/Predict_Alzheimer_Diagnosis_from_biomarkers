@@ -1,0 +1,491 @@
+{
+  "build": 1,
+  "version": "v1",
+  "notebook": "notebooks/01c_mci_survival_cohort_freeze.ipynb",
+  "created_utc": "2026-07-11T21:23:54+00:00",
+  "git": {
+    "commit": "b14bcdd00f976c2df8259a1eddbed5f87dbcc3d7",
+    "dirty": true
+  },
+  "parameters": {
+    "align_tolerance_days": 90,
+    "missing_sentinels": [
+      -4,
+      -5
+    ],
+    "nonpositive_assay_is_missing": true,
+    "core_assays": [
+      "ptau217",
+      "abeta42",
+      "abeta40",
+      "nfl",
+      "gfap"
+    ],
+    "days_per_month": 30.4375,
+    "days_per_year": 365.25,
+    "random_seed": 20260711,
+    "imputation": "none"
+  },
+  "locked_rules": {
+    "diagnosis_coding": "1=CN, 2=MCI, 3=Dementia; blank=unknown/other (never event, never censor)",
+    "same_day_diagnosis_conflict": "collapse per (RID,DATE) keeping highest severity",
+    "anchor": "earliest plasma draw with >=1 usable core assay, nearest MCI dx within +/-90d",
+    "anchor_tiebreak": "earliest plasma DATE; plasma pre-deduplicated to one row per (RID,DATE) keep=first; stable original row order",
+    "time_origin": "plasma anchor date",
+    "event": "first dementia diagnosis strictly after the anchor",
+    "censoring": "last post-anchor non-dementia (CN/MCI) diagnosis date",
+    "no_usable_followup": "excluded from the survival cohort; never labelled stable",
+    "primary_complete_case": "survival-eligible + entry_age + APOE4_COUNT + ptau217",
+    "age": "entry_age is authoritative and UNDATED; age-at-anchor is not derived",
+    "dementia_on_or_before_anchor": "flagged for adjudication, not excluded (locked v1 rules)"
+  },
+  "source_row_id_rule": "<prefix>_src_row = 0-based positional index of the record in the raw CSV as delivered (row 0 = first data row after the header), assigned immediately after pd.read_csv and BEFORE any filtering/sorting/dedup. Native ADNI ids carried where present: dx_src_id (DXSUM.ID), apoe_src_id (APOERES.ID). The UPENN plasma panel has NO native row id.",
+  "sources": [
+    {
+      "file": "Data/raw/All_Subjects_DXSUM_05Mar2026.csv",
+      "sha256": "35e1b1f45a7a5cbfd51b39d68a4afd3f2d6276e86be8561c9e8a562286208b68",
+      "mtime_utc": "2000-01-01T08:00:00+00:00",
+      "bytes": 3461706
+    },
+    {
+      "file": "Data/raw/All_Subjects_UPENN_PLASMA_FUJIREBIO_QUANTERIX_05Mar2026.csv",
+      "sha256": "185c583d8e8777f83e4d1fe6b40f6ee923000a281c22f39dc524f92863bb2a96",
+      "mtime_utc": "2000-01-01T08:00:00+00:00",
+      "bytes": 396959
+    },
+    {
+      "file": "Data/raw/All_Subjects_APOERES_05Mar2026.csv",
+      "sha256": "ab617cf2c3cd776a685b6fbd3161f9caea196d8d1e9bb5dc5329146db257909a",
+      "mtime_utc": "2000-01-01T08:00:00+00:00",
+      "bytes": 329977
+    },
+    {
+      "file": "Data/raw/All_Subjects_My_Table_05Mar2026.csv",
+      "sha256": "f04ad5e2c21a4d0d93dd9e31b81b2024df1cb41c942b5104fc0b245e39fb1ae6",
+      "mtime_utc": "2000-01-01T08:00:00+00:00",
+      "bytes": 106043
+    },
+    {
+      "file": "Data/raw/All_Subjects_CDR_05Mar2026.csv",
+      "sha256": "5e29c321b9fed128ea17b3fe19822e634148c37d91711785006c0ef181b691e0",
+      "mtime_utc": "2000-01-01T08:00:00+00:00",
+      "bytes": 2615587
+    },
+    {
+      "file": "Data/raw/All_Subjects_MMSE_05Mar2026.csv",
+      "sha256": "291969e071110205b70109235f70a5296a62a9f506c097b612aef24019cb72d8",
+      "mtime_utc": "2000-01-01T08:00:00+00:00",
+      "bytes": 4142395
+    },
+    {
+      "file": "Data/raw/All_Subjects_MOCA_05Mar2026.csv",
+      "sha256": "c2bca70e52717f5a571f4cb36274dcb1010eac4f1b648dffcdfee15185a673af",
+      "mtime_utc": "2000-01-01T08:00:00+00:00",
+      "bytes": 2663233
+    },
+    {
+      "file": "Data/raw/All_Subjects_FAQ_05Mar2026.csv",
+      "sha256": "3d3504af35b7c2d19d715c6e040bc335d1f8f0d9a0823d768fc432286414cb7b",
+      "mtime_utc": "2000-01-01T08:00:00+00:00",
+      "bytes": 2237121
+    }
+  ],
+  "counts": {
+    "dxsum_participants": 3789,
+    "participants_with_mci_dx": 1801,
+    "participants_with_usable_plasma": 1615,
+    "anchor_cohort": 535,
+    "followup_cohort": 410,
+    "followup_events": 86,
+    "followup_censored": 324,
+    "primary_cohort": 401,
+    "primary_events": 85,
+    "excluded_no_usable_followup": 125,
+    "excluded_nonpositive_followup": 0,
+    "excluded_missing_primary_feature": 9,
+    "flagged_dementia_on_or_before_anchor": 8
+  },
+  "reconciliation_targets": {
+    "anchor": 535,
+    "followup": 410,
+    "followup_events": 86,
+    "primary": 401,
+    "primary_events": 85
+  },
+  "reconciled": true,
+  "outputs": [
+    {
+      "file": "outputs/01c_mci_survival_cohort_freeze/mci_survival_anchor_cohort_v1.tsv",
+      "sha256": "64e66814726c2263281b25da01c8118f73f77e5e00354bdca2074400cb0aa6ee",
+      "n_rows": 535,
+      "n_cols": 78
+    },
+    {
+      "file": "outputs/01c_mci_survival_cohort_freeze/mci_survival_followup_cohort_v1.tsv",
+      "sha256": "8203a70f7cc8d03053070fa12bb90cf73bb6c20b09416aa61c2a7ba4b7c8086b",
+      "n_rows": 410,
+      "n_cols": 78
+    },
+    {
+      "file": "outputs/01c_mci_survival_cohort_freeze/mci_survival_primary_cohort_v1.tsv",
+      "sha256": "a15e2cb8606f676b3bcfc4d23de72c752779836ce9406b04b01c84394a76e8ad",
+      "n_rows": 401,
+      "n_cols": 78
+    },
+    {
+      "file": "outputs/01c_mci_survival_cohort_freeze/mci_survival_exclusion_log_v1.tsv",
+      "sha256": "a3eafebcdd3e392ba75a7e97da842966d6f8793ac1e43ce1817378c4857fe2ff",
+      "n_rows": 535,
+      "n_cols": 25
+    },
+    {
+      "file": "outputs/01c_mci_survival_cohort_freeze/mci_survival_cohort_flow_v1.tsv",
+      "sha256": "39b88d1a9f6cc3e48dbb605f94a0f11a6be8bf3aa6e90a92b340a513b6b3c8f1",
+      "n_rows": 13,
+      "n_cols": 5
+    }
+  ],
+  "notes": {
+    "ptau181": "not integrated in v1: p-tau181 exists only in All_Subjects_FNIHBC_BLOOD_BIOMARKER_TRAJECTORIES_05Mar2026.csv (long format, 2 platforms: QX_plasma_ptau181 / Roche_plasma_ptau181); that sub-study overlaps only 40/535 anchor participants (33/410 survival-eligible). Its absence does not affect anchor, survival or primary eligibility.",
+    "censoring_limitation": "no death / loss-to-follow-up table exists; censoring is administrative (last clinical visit) and may be informative",
+    "cognition_timing": "baseline cognition uses nearest +/-90d and may fall AFTER the anchor; *_offset_days is carried so Build 3 can audit it"
+  },
+  "assertions": {
+    "n_total": 65,
+    "n_passed": 65,
+    "n_failed": 0,
+    "results": [
+      {
+        "assertion": "dxh unique on (RID, DATE)  [source-row join key is well-defined]",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "plasma unique on (RID, DATE) after de-duplication  [anchor tie-break is fully determined]",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "no dementia diagnosis ON the anchor date is treated as an incident event",
+        "passed": true,
+        "detail": "structurally guaranteed: a same-day dementia would be the nearest dx and would not match as MCI"
+      },
+      {
+        "assertion": "frozen schema: every declared column exists in the master",
+        "passed": true,
+        "detail": "[]"
+      },
+      {
+        "assertion": "[anchor] one row per participant / no duplicate RID",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "[anchor] no missing participant ID",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "[anchor] sorted deterministically by RID",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "[followup] one row per participant / no duplicate RID",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "[followup] no missing participant ID",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "[followup] sorted deterministically by RID",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "[primary] one row per participant / no duplicate RID",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "[primary] no missing participant ID",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "[primary] sorted deterministically by RID",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "[exclusion_log] one row per participant / no duplicate RID",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "[exclusion_log] no missing participant ID",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "[exclusion_log] sorted deterministically by RID",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "all anchor-matched diagnoses are MCI (re-read from dxh)",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "baseline_dx_harmonized == 'MCI' for every row",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "all anchor matches within +/-90 days (max=90d)",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "anchor == EARLIEST eligible MCI-aligned draw for every participant (independent recomputation; no future info can enter)",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "candidate universe reproduces the anchor cohort exactly",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "later, more-complete draws were NOT preferred over the earliest draw",
+        "passed": true,
+        "detail": "0 participants had a later draw with MORE usable assays; the earliest draw was still anchored in every case"
+      },
+      {
+        "assertion": "every survival participant has an event or censoring date",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "all follow-up durations strictly positive (min=1d)",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "event/censor dates are strictly AFTER the anchor",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "every event date IS the first post-anchor dementia diagnosis (independent recomputation)",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "no censored participant has ANY post-anchor dementia diagnosis",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "event participants carry no censor date (never censored before their event)",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "event participants: followup_end_date == event_date",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "every event row is traceable to a DXSUM source row",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "every censored participant is censored at their LAST post-anchor non-dementia visit (independent recomputation)",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "every censor row is traceable to a DXSUM source row",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "every censoring diagnosis is CN or MCI in the source",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "no-usable-follow-up participants are excluded from the survival cohort",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "no-usable-follow-up participants have NO event_indicator (not silently coded as censored/stable)",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "no-usable-follow-up participants have no follow-up time",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "[primary] entry_age is nonmissing for every participant",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "[primary] APOE4_COUNT is nonmissing for every participant",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "[primary] ptau217 is nonmissing for every participant",
+        "passed": true,
+        "detail": "n=0 RIDs=[]"
+      },
+      {
+        "assertion": "primary_eligible depends ONLY on followup + entry_age + APOE4 + p-tau217",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "participants WITH missing secondary features are still retained in the primary cohort",
+        "passed": true,
+        "detail": "missing counts inside the primary cohort: {'gfap': 40, 'nfl': 40, 'abeta42': 2, 'abeta40': 2, 'ratio_ab42_ab40': 2, 'CDRSB': 87, 'MMSCORE': 47, 'MOCA': 88, 'FAQTOTAL': 31}"
+      },
+      {
+        "assertion": "cohorts are strictly nested: primary subset-of followup subset-of anchor",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "every anchor row is traceable to a plasma source row",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "every matched MCI diagnosis is traceable to a DXSUM source row",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "age source row present wherever entry_age is present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "APOE source row present wherever APOE4_COUNT is present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "age_source_date is structurally absent (My_Table carries no datestamp)",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "exclusion log covers exactly the broad-anchor cohort",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "log stages partition the anchor cohort (primary + followup_only + anchor_only == A)",
+        "passed": true,
+        "detail": "401 + 9 + 125 == 535"
+      },
+      {
+        "assertion": "log reproduces the survival-follow-up cohort (B)",
+        "passed": true,
+        "detail": "401 + 9 == 410"
+      },
+      {
+        "assertion": "log reproduces the primary complete-case cohort (C)",
+        "passed": true,
+        "detail": "401 == 401"
+      },
+      {
+        "assertion": "every excluded participant has a non-empty exclusion reason",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "every included participant has an empty exclusion stage and reason",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "flow: A - (no-followup + non-positive-followup) == B",
+        "passed": true,
+        "detail": "535 - (125 + 0) == 410"
+      },
+      {
+        "assertion": "flow: B - excluded-missing-primary-feature == C",
+        "passed": true,
+        "detail": "410 - 9 == 401"
+      },
+      {
+        "assertion": "flow counts equal the frozen table row counts",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "flow event counts equal the frozen table event counts",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "assertion": "entry_age has ZERO missingness in the survival cohort (Build 0 finding)",
+        "passed": true,
+        "detail": "missing n=0"
+      },
+      {
+        "assertion": "p-tau217 has ZERO missingness in the survival cohort (Build 0 finding)",
+        "passed": true,
+        "detail": "missing n=0"
+      },
+      {
+        "assertion": "the B->C drop is explained ENTIRELY by missing APOE4",
+        "passed": true,
+        "detail": "B=410, C=401, drop=9, APOE4-missing=9; n=9 RIDs=[7079, 10167, 10193, 10251, 10276, 10432, 10441, 10452, 10672]"
+      },
+      {
+        "assertion": "exactly one of the APOE4-missing survival participants is an event",
+        "passed": true,
+        "detail": "APOE4-missing events=1; events B=86 -> C=85; event RID(s)=n=1 RIDs=[10251]"
+      },
+      {
+        "assertion": "[regression] identical participant set vs 01b",
+        "passed": true,
+        "detail": "01b n=535, 01c n=535; only-01b=n=0 RIDs=[]; only-01c=n=0 RIDs=[]"
+      },
+      {
+        "assertion": "[regression] 01c reproduces 01b EXACTLY on every shared scientific column (25 columns x 535 participants)",
+        "passed": true,
+        "detail": "0 differing cells"
+      },
+      {
+        "assertion": "cohort counts reconcile with the 01b audit landmarks (535 / 410 / 86 / 401 / 85)",
+        "passed": true,
+        "detail": "                   stage   n  events  target_n  target_events  diff_n  diff_events\n         A. Broad anchor 535     NaN       535            NaN       0          NaN\n   B. Survival-follow-up 410    86.0       410           86.0       0          0.0\nC. Primary complete-case 401    85.0       401           85.0       0          0.0"
+      },
+      {
+        "assertion": "no prior (01b) artifact is written by this notebook",
+        "passed": true,
+        "detail": ""
+      }
+    ]
+  },
+  "environment": {
+    "python": "3.14.0",
+    "pandas": "3.0.1",
+    "numpy": "2.4.3",
+    "platform": "macOS-14.7.6-arm64-arm-64bit-Mach-O"
+  }
+}

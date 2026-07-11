@@ -1,0 +1,12 @@
+step,n,notes
+Total unique DXSUM participants,3789,
+Participants with >=1 MCI diagnosis,1801,
+Broad MCI plasma-anchor cohort (A),535,"earliest MCI plasma draw, >=1 usable assay"
+Excluded: no usable post-anchor follow-up,125,no valid post-anchor dx / event
+Survival-follow-up cohort (B),410,A minus no-follow-up
+Observed dementia event (any time),86,
+Right-censored without dementia,324,censor at last non-dementia visit
+Primary-model-eligible cohort (C),401,+entry_age +APOE4 +p-tau217
+GFAP secondary cohort (D),361,C + GFAP
+Amyloid-ratio secondary cohort (E),399,C + Aβ42 + Aβ40 + ratio
+Full exploratory biomarker cohort (F),359,C + GFAP + NfL + ratio

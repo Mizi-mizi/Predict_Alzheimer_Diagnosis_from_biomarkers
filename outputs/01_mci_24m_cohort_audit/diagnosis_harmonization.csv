@@ -1,0 +1,5 @@
+raw_diagnosis_value,harmonized_diagnosis,n_visit_rows,included_as_baseline_MCI,included_as_dementia_outcome,notes
+1,CN,6404,No,No,Cognitively normal (DXNORM==1).
+2,MCI,6623,Yes,No,Mild cognitive impairment (DXMCI==1). Baseline-eligible.
+3,Dementia,3016,No,Yes,Dementia / AD (DXAD==1). Defines the progression event.
+(blank),unknown/other,45,No,No,Blank/NaN DIAGNOSIS — excluded from anchor & outcome logic.

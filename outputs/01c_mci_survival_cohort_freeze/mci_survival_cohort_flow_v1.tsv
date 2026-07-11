@@ -1,0 +1,14 @@
+stage_order	step	n	n_events	notes
+1	Total unique DXSUM participants	3789		source population
+2	Participants with >=1 dated MCI diagnosis	1801		
+3	Participants with >=1 usable plasma draw	1615		>=1 usable core assay
+4	A. Broad MCI plasma-anchor cohort	535		earliest MCI-aligned (+/-90d) plasma draw with >=1 usable core assay
+5	Excluded: no usable post-anchor follow-up	125		no valid post-anchor diagnosis -> NOT labelled stable
+6	Excluded: invalid or non-positive follow-up	0		event/censor must be strictly after the anchor
+7	B. Survival-follow-up cohort	410	86.0	A minus no-usable-follow-up
+8	   B: observed dementia events	86	86.0	first post-anchor dementia
+9	   B: right-censored	324	0.0	censored at last post-anchor non-dementia visit
+10	Excluded: missing primary feature	9	1.0	entry_age / APOE4 / p-tau217
+11	C. Primary complete-case cohort	401	85.0	B + entry_age + APOE4 + p-tau217
+12	   C: observed dementia events	85	85.0	
+13	   C: right-censored	316	0.0	

@@ -1,0 +1,5 @@
+anchor_definition,n_participants,notes
+Prior p-tau217-required anchor,535,Reproduced from prior audit logic
+Broad MCI plasma anchor,535,New definition (>=1 usable core assay)
+Broad anchor + survival follow-up,410,>=1 usable post-anchor diagnosis / event
+Primary-model-eligible survival cohort,401,+ entry_age + APOE4 + p-tau217

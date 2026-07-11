@@ -1,0 +1,18 @@
+item,value
+Diagnosis / longitudinal status,"All_Subjects_DXSUM_05Mar2026.csv | DIAGNOSIS, VISCODE2, EXAMDATE"
+Primary plasma panel,All_Subjects_UPENN_PLASMA_FUJIREBIO_QUANTERIX_05Mar2026.csv
+APOE,All_Subjects_APOERES_05Mar2026.csv | GENOTYPE -> APOE4_COUNT
+Age / demographic,All_Subjects_My_Table_05Mar2026.csv | entry_age (no datestamp)
+Clinical benchmarks,"CDR(CDRSB), MMSE(MMSCORE), MOCA(MOCA), FAQ(FAQTOTAL)"
+Participant ID field,RID (join key); PTID (human-readable)
+Blood-draw date field,plasma.EXAMDATE
+Diagnosis-date field,DXSUM.EXAMDATE
+Diagnosis mapping,"1=CN, 2=MCI, 3=Dementia; blank -> unknown/other (excluded)"
+Plasma assay columns used,"pT217_F, AB42_F, AB40_F, AB42_AB40_F, NfL_Q, GFAP_Q"
+Sentinel values handled,"-4, -5 -> NaN; non-positive concentration -> NaN (flagged)"
+Anchor definition,earliest MCI-aligned plasma draw (±90d) with >=1 usable core assay
+Anchor tie-break,earliest DATE; then first row order (deterministic)
+Survival time origin,plasma anchor date
+Survival event rule,first post-anchor Dementia diagnosis (event_indicator=1)
+Censoring rule,last valid post-anchor non-dementia (CN/MCI) diagnosis date
+No usable follow-up,no valid post-anchor dx and no dementia event -> excluded from survival
