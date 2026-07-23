@@ -1,0 +1,27 @@
+output_column	label	data_type	unit	allowed_values	source	derivation	role	missing_in_401	transformation_applied	notes
+RID	Participant ID	int64	integer id	positive integer	frozen mci_survival_primary_cohort_v1.tsv	carried	IDENTIFIER	0	none	IDENTIFIER ONLY — never a predictor
+anchor_date	Plasma anchor date	str	date	YYYY-MM-DD	frozen mci_survival_primary_cohort_v1.tsv	carried	PROVENANCE	0	none	provenance / NACC harmonization only
+time_to_event_or_censor_days	Follow-up duration	float64	days	strictly positive	frozen mci_survival_primary_cohort_v1.tsv	carried (not recomputed)	OUTCOME (duration)	0	none	use with event_indicator
+event_indicator	Incident all-cause dementia	int64	0/1	1=dementia,0=censored	frozen mci_survival_primary_cohort_v1.tsv	carried (not recomputed)	OUTCOME (event)	0	none	0 = censored, NOT 'stable'
+entry_age	Age at study entry	float64	years	positive float	frozen mci_survival_primary_cohort_v1.tsv	carried	PRIMARY PREDICTOR	0	none	UNDATED; age at entry, not at anchor
+APOE4_COUNT	APOE e4 allele count	float64	alleles	0/1/2	frozen mci_survival_primary_cohort_v1.tsv	carried	PRIMARY PREDICTOR	0	none	complete in the primary cohort
+APOE4_CARRIER	APOE e4 carrier	int64	0/1	0/1	derived	(APOE4_COUNT>=1).astype(int)	PRIMARY PREDICTOR (derived)	0	binarization	matches Person 2's sensitivity model
+ptau217	Plasma p-tau217 (raw)	float64	pg/mL	positive float	frozen mci_survival_primary_cohort_v1.tsv	carried	PRIMARY PREDICTOR	0	none	raw Fujirebio; complete in the primary cohort
+log_ptau217	Natural log p-tau217	float64	log pg/mL	float	derived	np.log(ptau217)	PRIMARY PREDICTOR (derived)	0	natural log	transform used in Person 2's Model 1
+gfap	Plasma GFAP (raw)	float64	pg/mL	positive float	frozen mci_survival_primary_cohort_v1.tsv	carried	SECONDARY PREDICTOR	40	none	Quanterix; missing for the same 40 as nfl
+log_gfap	Natural log GFAP	float64	log pg/mL	float	derived	np.log(gfap)	SECONDARY PREDICTOR (derived)	40	natural log	NA preserved where gfap missing
+nfl	Plasma NfL (raw)	float64	pg/mL	positive float	frozen mci_survival_primary_cohort_v1.tsv	carried	SECONDARY PREDICTOR	40	none	Quanterix; missing for the same 40 as gfap
+log_nfl	Natural log NfL	float64	log pg/mL	float	derived	np.log(nfl)	SECONDARY PREDICTOR (derived)	40	natural log	NA preserved where nfl missing
+abeta42	Plasma Abeta-42 (raw)	float64	pg/mL	positive float	frozen mci_survival_primary_cohort_v1.tsv	carried	SECONDARY PREDICTOR	2	none	Fujirebio; ratio numerator (preserved)
+abeta40	Plasma Abeta-40 (raw)	float64	pg/mL	positive float	frozen mci_survival_primary_cohort_v1.tsv	carried	SECONDARY PREDICTOR	2	none	Fujirebio; ratio denominator (preserved)
+ratio_ab42_ab40	Abeta-42/Abeta-40 ratio	float64	ratio	positive float	frozen mci_survival_primary_cohort_v1.tsv	abeta42/abeta40 (== frozen col)	SECONDARY PREDICTOR	2	none	same raw row for both components; NA where either missing
+pre_anchor_dementia_n	Count of dementia dx before the anchor	int64	count	>=0	frozen mci_survival_primary_cohort_v1.tsv	carried	QC FLAG	0	none	prior-dementia QC; NOT an exclusion; adjudication pending
+qc_dementia_on_or_before_anchor	Any dementia dx on/before the anchor	bool	bool	True/False	frozen mci_survival_primary_cohort_v1.tsv	carried	QC FLAG	0	none	prior-dementia QC flag; NOT an automatic exclusion; adjudication pending
+eligible_core	Complete for core (age+APOE4+ptau217)	int64	0/1	0/1	derived	age & APOE4 & ptau217 present	ELIGIBILITY FLAG	0	none	== 1 for all 401
+eligible_gfap	Complete for core + GFAP	int64	0/1	0/1	derived	core & gfap present	ELIGIBILITY FLAG	0	none	361 eligible
+eligible_nfl	Complete for core + NfL	int64	0/1	0/1	derived	core & nfl present	ELIGIBILITY FLAG	0	none	361 eligible
+eligible_amyloid	Complete for core + amyloid ratio	int64	0/1	0/1	derived	core & ratio_ab42_ab40 present	ELIGIBILITY FLAG	0	none	399 eligible
+eligible_gfap_nfl	Complete for core + GFAP + NfL	int64	0/1	0/1	derived	core & gfap & nfl present	ELIGIBILITY FLAG	0	none	361 eligible
+eligible_gfap_amyloid	Complete for core + GFAP + amyloid	int64	0/1	0/1	derived	core & gfap & ratio present	ELIGIBILITY FLAG	0	none	359 eligible
+eligible_nfl_amyloid	Complete for core + NfL + amyloid	int64	0/1	0/1	derived	core & nfl & ratio present	ELIGIBILITY FLAG	0	none	359 eligible
+eligible_full_blood	Complete for core + GFAP + NfL + amyloid	int64	0/1	0/1	derived	core & gfap & nfl & ratio present	ELIGIBILITY FLAG	0	none	359 eligible (== full blood panel)

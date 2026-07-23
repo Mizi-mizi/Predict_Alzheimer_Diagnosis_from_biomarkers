@@ -1,0 +1,240 @@
+{
+  "manifest_schema_version": "1.0.0",
+  "dataset": "mci_survival_shared_modeling_dataset",
+  "version": "v1",
+  "purpose": "shared analysis-ready survival-modeling dataset for feature-combination analysis, alternative survival-model comparison, centralized evaluation, and NACC harmonization; all 401 primary-cohort participants preserved; exactly 26 columns",
+  "created_utc": "2026-07-23T01:16:30+00:00",
+  "created_utc_note": "the only non-deterministic field; excluded from byte-identity comparisons",
+  "self_hash_policy": "this manifest excludes its own SHA-256; verify externally with shasum",
+  "git": {
+    "commit": "06ca00162e9050db2c3bc39f87f4bf1aa6fa94a0",
+    "branch": "main",
+    "dirty": true
+  },
+  "environment": {
+    "python": "3.14.0",
+    "pandas": "3.0.1",
+    "numpy": "2.4.3",
+    "platform": "macOS-14.7.6-arm64-arm-64bit-Mach-O"
+  },
+  "input": {
+    "path": "outputs/01c_mci_survival_cohort_freeze/mci_survival_primary_cohort_v1.tsv",
+    "sha256": "a15e2cb8606f676b3bcfc4d23de72c752779836ce9406b04b01c84394a76e8ad",
+    "expected_sha256": "a15e2cb8606f676b3bcfc4d23de72c752779836ce9406b04b01c84394a76e8ad",
+    "checksum_verified": true,
+    "n_participants": 401,
+    "n_events": 85,
+    "n_censored": 316,
+    "n_columns": 78
+  },
+  "final_columns": [
+    "RID",
+    "anchor_date",
+    "time_to_event_or_censor_days",
+    "event_indicator",
+    "entry_age",
+    "APOE4_COUNT",
+    "APOE4_CARRIER",
+    "ptau217",
+    "log_ptau217",
+    "gfap",
+    "log_gfap",
+    "nfl",
+    "log_nfl",
+    "abeta42",
+    "abeta40",
+    "ratio_ab42_ab40",
+    "pre_anchor_dementia_n",
+    "qc_dementia_on_or_before_anchor",
+    "eligible_core",
+    "eligible_gfap",
+    "eligible_nfl",
+    "eligible_amyloid",
+    "eligible_gfap_nfl",
+    "eligible_gfap_amyloid",
+    "eligible_nfl_amyloid",
+    "eligible_full_blood"
+  ],
+  "derivations": {
+    "APOE4_CARRIER": "(APOE4_COUNT >= 1).astype(int)",
+    "log_ptau217": "np.log(ptau217)",
+    "log_gfap": "np.log(gfap)",
+    "log_nfl": "np.log(nfl)",
+    "ratio_ab42_ab40": "abeta42 / abeta40 (carried from frozen; identical)"
+  },
+  "eligibility_definitions": {
+    "core": "entry_age & APOE4_COUNT & ptau217 all present (complete for all 401)",
+    "amyloid": "ratio_ab42_ab40 present (both Abeta components valid)",
+    "eligible_core": "core AND core present",
+    "eligible_gfap": "core AND gfap present",
+    "eligible_nfl": "core AND nfl present",
+    "eligible_amyloid": "core AND amyloid present",
+    "eligible_gfap_nfl": "core AND gfap + nfl present",
+    "eligible_gfap_amyloid": "core AND gfap + amyloid present",
+    "eligible_nfl_amyloid": "core AND nfl + amyloid present",
+    "eligible_full_blood": "core AND full + blood present"
+  },
+  "policy": {
+    "participants_preserved": 401,
+    "imputation": "none",
+    "scaling": "none",
+    "feature_selection": "none",
+    "model_fitting": "none",
+    "cognition_added": false,
+    "cv_folds_added": false,
+    "reduced_to_complete_case": false,
+    "raw_biomarkers_carried_byte_identical": true,
+    "prior_dementia_participants_retained": true
+  },
+  "column_roles": {
+    "RID": "IDENTIFIER",
+    "anchor_date": "PROVENANCE",
+    "time_to_event_or_censor_days": "OUTCOME (duration)",
+    "event_indicator": "OUTCOME (event)",
+    "entry_age": "PRIMARY PREDICTOR",
+    "APOE4_COUNT": "PRIMARY PREDICTOR",
+    "APOE4_CARRIER": "PRIMARY PREDICTOR (derived)",
+    "ptau217": "PRIMARY PREDICTOR",
+    "log_ptau217": "PRIMARY PREDICTOR (derived)",
+    "gfap": "SECONDARY PREDICTOR",
+    "log_gfap": "SECONDARY PREDICTOR (derived)",
+    "nfl": "SECONDARY PREDICTOR",
+    "log_nfl": "SECONDARY PREDICTOR (derived)",
+    "abeta42": "SECONDARY PREDICTOR",
+    "abeta40": "SECONDARY PREDICTOR",
+    "ratio_ab42_ab40": "SECONDARY PREDICTOR",
+    "pre_anchor_dementia_n": "QC FLAG",
+    "qc_dementia_on_or_before_anchor": "QC FLAG",
+    "eligible_core": "ELIGIBILITY FLAG",
+    "eligible_gfap": "ELIGIBILITY FLAG",
+    "eligible_nfl": "ELIGIBILITY FLAG",
+    "eligible_amyloid": "ELIGIBILITY FLAG",
+    "eligible_gfap_nfl": "ELIGIBILITY FLAG",
+    "eligible_gfap_amyloid": "ELIGIBILITY FLAG",
+    "eligible_nfl_amyloid": "ELIGIBILITY FLAG",
+    "eligible_full_blood": "ELIGIBILITY FLAG"
+  },
+  "analysis_set_counts": [
+    {
+      "analysis_set": "eligible_core",
+      "eligibility_flag": "eligible_core",
+      "required_predictors": "entry_age+APOE4_COUNT+log_ptau217",
+      "n": 401,
+      "events": 85,
+      "censored": 316,
+      "pct_of_401": 100.0,
+      "intended_use": "core primary model (== frozen primary cohort)"
+    },
+    {
+      "analysis_set": "eligible_gfap",
+      "eligibility_flag": "eligible_gfap",
+      "required_predictors": "core+log_gfap",
+      "n": 361,
+      "events": 85,
+      "censored": 276,
+      "pct_of_401": 90.0,
+      "intended_use": "+ GFAP"
+    },
+    {
+      "analysis_set": "eligible_nfl",
+      "eligibility_flag": "eligible_nfl",
+      "required_predictors": "core+log_nfl",
+      "n": 361,
+      "events": 85,
+      "censored": 276,
+      "pct_of_401": 90.0,
+      "intended_use": "+ NfL"
+    },
+    {
+      "analysis_set": "eligible_amyloid",
+      "eligibility_flag": "eligible_amyloid",
+      "required_predictors": "core+ratio_ab42_ab40",
+      "n": 399,
+      "events": 83,
+      "censored": 316,
+      "pct_of_401": 99.5,
+      "intended_use": "+ Abeta42/Abeta40 ratio"
+    },
+    {
+      "analysis_set": "eligible_gfap_nfl",
+      "eligibility_flag": "eligible_gfap_nfl",
+      "required_predictors": "core+log_gfap+log_nfl",
+      "n": 361,
+      "events": 85,
+      "censored": 276,
+      "pct_of_401": 90.0,
+      "intended_use": "+ GFAP + NfL"
+    },
+    {
+      "analysis_set": "eligible_gfap_amyloid",
+      "eligibility_flag": "eligible_gfap_amyloid",
+      "required_predictors": "core+log_gfap+ratio_ab42_ab40",
+      "n": 359,
+      "events": 83,
+      "censored": 276,
+      "pct_of_401": 89.5,
+      "intended_use": "+ GFAP + amyloid ratio"
+    },
+    {
+      "analysis_set": "eligible_nfl_amyloid",
+      "eligibility_flag": "eligible_nfl_amyloid",
+      "required_predictors": "core+log_nfl+ratio_ab42_ab40",
+      "n": 359,
+      "events": 83,
+      "censored": 276,
+      "pct_of_401": 89.5,
+      "intended_use": "+ NfL + amyloid ratio"
+    },
+    {
+      "analysis_set": "eligible_full_blood",
+      "eligibility_flag": "eligible_full_blood",
+      "required_predictors": "core+log_gfap+log_nfl+ratio_ab42_ab40",
+      "n": 359,
+      "events": 83,
+      "censored": 276,
+      "pct_of_401": 89.5,
+      "intended_use": "all blood biomarkers (GFAP+NfL+ratio) complete-case"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs/03a_mci_survival_shared_modeling/mci_survival_shared_modeling_dataset_v1.tsv",
+      "sha256": "521120e76418da5433d840d5301f2ed71686170a7b12a548ca631d950d314a3d",
+      "n_rows": 401,
+      "n_cols": 26
+    },
+    {
+      "path": "outputs/03a_mci_survival_shared_modeling/mci_survival_shared_modeling_data_dictionary_v1.tsv",
+      "sha256": "9ff1df31d93c40bd272d801c744d4d1ee0de0f1b3420ba5a92f5406b4da6c6e8",
+      "n_rows": 26,
+      "n_cols": 11
+    },
+    {
+      "path": "outputs/03a_mci_survival_shared_modeling/mci_survival_analysis_set_counts_v1.tsv",
+      "sha256": "da724882a09e1d0460466613f26d5b40c8b63fbe37429950346241bd7b04d388",
+      "n_rows": 8,
+      "n_cols": 8
+    }
+  ],
+  "protected_frozen_artifacts_unchanged": {
+    "mci_survival_anchor_cohort_v1.tsv": "64e66814726c2263281b25da01c8118f73f77e5e00354bdca2074400cb0aa6ee",
+    "mci_survival_followup_cohort_v1.tsv": "8203a70f7cc8d03053070fa12bb90cf73bb6c20b09416aa61c2a7ba4b7c8086b",
+    "mci_survival_primary_cohort_v1.tsv": "a15e2cb8606f676b3bcfc4d23de72c752779836ce9406b04b01c84394a76e8ad",
+    "mci_survival_exclusion_log_v1.tsv": "a3eafebcdd3e392ba75a7e97da842966d6f8793ac1e43ce1817378c4857fe2ff",
+    "mci_survival_cohort_flow_v1.tsv": "39b88d1a9f6cc3e48dbb605f94a0f11a6be8bf3aa6e90a92b340a513b6b3c8f1",
+    "mci_survival_freeze_provenance_v1.json": "d32c113a0406242bac7b7c08d2cd7b23a9b3d3ece4b2b3a47bee9cbdb0acf05e",
+    "mci_survival_manual_qc_cases_v1.tsv": "90669ba268a39daee4ee3c8c68795d43673e8948c25015626ed1f1f831dc84dd",
+    "mci_survival_manual_qc_longitudinal_context_v1.tsv": "de1954adf09463c89091a6a01217620508697f27a49e8456a3ce7b4c403d92e6",
+    "mci_survival_manual_qc_form_v1.tsv": "9ad2db21c2067e2a0482a4a16831bedc943ba120943c75db8322fe5004832dea",
+    "mci_survival_manual_qc_sampling_summary_v1.tsv": "632e5bd24ae99f6cb0d23ecc6879bb65160b8facee64335f640187344be41914",
+    "mci_survival_feature_missingness_v1.tsv": "cabe0fffaff0634b5cb651e901ae431180fd352d0403cf7e21bee170658ad4aa",
+    "mci_survival_model_complete_case_counts_v1.tsv": "2d380fe33673dae3bb028cfac4c1cb33468e6d95b7eab5fedae5e70fe3b47182",
+    "mci_survival_feature_timing_v1.tsv": "b6611ed8a1426a1ea55525f0b26243b6adc56b3fd81f9090044189682bbd0a22",
+    "mci_survival_feature_scenario_counts_v1.tsv": "e60b4a937a4f4e4fc0ff4faf045efe18647648e4fed55d751a18736732ead0f7",
+    "mci_survival_ptau181_platform_availability_v1.tsv": "ca30aa47975d6c8d6e9c78593812dd14540bacc3ee9b3c47f8938957452c4d50",
+    "mci_survival_data_dictionary_v1.tsv": "08465c1e129c67707155cee83373f302a40c5de5271d801a4a12af3f420f6b0a",
+    "mci_survival_freeze_manifest_v1.json": "55f6d945ee340e4f20402c71bb56eaca1d3fc813e2cda7a79436df48ea1526d4"
+  },
+  "report": "reports/mci_survival_build4_shared_modeling_dataset_v1.md",
+  "notebook": "notebooks/03a_mci_survival_shared_modeling_dataset.ipynb"
+}

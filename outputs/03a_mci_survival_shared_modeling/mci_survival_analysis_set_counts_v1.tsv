@@ -1,0 +1,9 @@
+analysis_set	eligibility_flag	required_predictors	n	events	censored	pct_of_401	intended_use
+eligible_core	eligible_core	entry_age+APOE4_COUNT+log_ptau217	401	85	316	100.0	core primary model (== frozen primary cohort)
+eligible_gfap	eligible_gfap	core+log_gfap	361	85	276	90.0	+ GFAP
+eligible_nfl	eligible_nfl	core+log_nfl	361	85	276	90.0	+ NfL
+eligible_amyloid	eligible_amyloid	core+ratio_ab42_ab40	399	83	316	99.5	+ Abeta42/Abeta40 ratio
+eligible_gfap_nfl	eligible_gfap_nfl	core+log_gfap+log_nfl	361	85	276	90.0	+ GFAP + NfL
+eligible_gfap_amyloid	eligible_gfap_amyloid	core+log_gfap+ratio_ab42_ab40	359	83	276	89.5	+ GFAP + amyloid ratio
+eligible_nfl_amyloid	eligible_nfl_amyloid	core+log_nfl+ratio_ab42_ab40	359	83	276	89.5	+ NfL + amyloid ratio
+eligible_full_blood	eligible_full_blood	core+log_gfap+log_nfl+ratio_ab42_ab40	359	83	276	89.5	all blood biomarkers (GFAP+NfL+ratio) complete-case
